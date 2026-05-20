@@ -1,0 +1,389 @@
+
+html {
+  --plyr-color-main: #C8102E;
+}
+
+.container {
+	margin: 20px auto;
+	max-width: 500px;
+}
+
+@media only screen and (orientation:portrait)
+{
+  .wrapper{
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    transform-origin:bottom left;
+
+    position:absolute;
+    top:-100vw;
+    height:100vw;
+    width:100vh;
+
+
+    background-color:rgba(250,250,250,1);
+    color:#fff;
+  }
+
+  .slide {
+    height:100vmin;
+    width:100vmax;
+  }
+
+  .step .slide {
+    height:100vmin;
+    width:100vmax;
+  }
+
+  .impressdiv {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    height:100vmin;
+    width:100vmax;
+  }
+
+
+  /* .slide {
+  width: 100vh;
+  width: 100vw;
+  } */
+
+}
+
+@media only screen and (orientation:landscape){
+  .wrapper {
+    /* transform-origin: 50% 50%; */
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    background-color:rgba(250,250,250,1);
+    color:#fff;
+
+    position:absolute;
+    /* top:0;
+    top:0; */
+    height:100vh;
+    width:100vw;
+  }
+
+  /* .slide {
+  transform-origin:top left;
+  position:absolute;
+  top:0vw;
+  left: 5vw;
+  height:  90vh;
+  width: 30vw;
+  } */
+
+  .impressdiv {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    height:100vmin;
+    width:100vmax;
+  }
+
+  .slide {
+    height:100vmin;
+    width:100vmax;
+  }
+
+  .step .slide {
+    height:100vmin;
+    width:100vmax;
+  }
+
+}
+
+.menul {
+  display: block;
+  position: absolute;
+  pointer-events: auto;
+
+  /* width: 30em; */
+  /* width: -webkit-calc(40% - 5px);
+  width: -moz-calc(40% - 5px); */
+  width: 25vmax;
+  left:  0rem;
+  /* left: calc(18em - 6em); */
+
+  height: 100vh;
+  z-index: 3000;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+#logodiv         {
+  /* pointer-events: auto; */
+  position: fixed;
+  top: 4vh;
+  right: 4vw; width: 10%; height: 8%; z-index: 100;
+}
+
+
+.impress-progressbar {
+  position: fixed;
+  right: 10vw;
+  bottom: 2px;
+  left: 10vw;
+  /* border-radius: 7px; */
+  border: 0px solid rgba(100, 100, 100, 0.2);
+}
+.impress-progressbar DIV {
+  width: 0;
+  height: 3px;
+  border-radius: 5px;
+  background: rgba(150, 0, 0, 0.25);
+  transition: width 1s linear;
+}
+.impress-progress {
+  position: fixed;
+  left: 2vw;
+  bottom: 1px;
+  text-align: left;
+  color: rgba(150, 0, 0, 0.25);
+}
+
+#touchicon {
+  /* -webkit-filter: invert(0.5); */
+  /* filter: invert(0.5); */
+  opacity: 0.6;
+  font-size: 2.5rem;
+}
+
+#touchicon:hover {
+  opacity: 0.9;
+}
+
+
+.ytDiv {
+  pointer-events: auto;
+  z-index: 1000;
+  position: absolute;
+
+  /* height: 70vh; */
+  /* background: rgba(255,255,250,0.95); */
+  /* color: #eee; */
+  font-size:1vh;
+  z-index: 200;
+  /* box-shadow: 0vw 0vw 1vw #aaa; */
+  display: flex;
+
+  left: 120vmax;
+  bottom: 17.5vmin;
+
+  width: 20vmax; /*400 + 30 */
+  height: 11vmax;
+  -webkit-transition: 1s;
+  transition: 1s;
+
+}
+
+.infoDiv {
+  pointer-events: auto;
+  z-index: 5000;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+
+  width: 80%;
+  height: 80%;
+  overflow: auto;
+  background: rgba(255,255,250,0.97);
+  color: #eee;
+  /* font-size:1vh; */
+  z-index: 200;
+  box-shadow: 0vw 0vw 2vw #aaa;
+  /* display: flex;
+  align-items: center;
+  text-align: center;
+
+  text-align: center;
+  justify-content: center;
+  align-items: center; */
+}
+
+.header {
+  display: none;
+  position: fixed;
+  top: 0;
+}
+.footer {
+  display: none;
+  position: fixed;
+  bottom: 0;
+}
+
+
+
+a {
+  color: rgba(200,16,46,0.9);
+}
+
+html, body {
+  font-size: 1vmax;
+}
+
+.slidesmenuDiv {
+  pointer-events: auto;
+  z-index: 4000;
+  position: absolute;
+  padding: 2vmin;
+
+  /* height: 70vh; */
+  background: rgba(55,55,55,0.95);
+  /* color: #eee; */
+  font-size:1.05rem;
+  z-index: 200;
+  box-shadow: 0vw 0vw 1vw #aaa;
+  display: flex;
+  overflow: auto;
+  left: -40vmax;
+  top: 10vmin;
+
+  width: 30vmax; /*400 + 30 */
+  height: 90vmin;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#slidelisttitle {
+  font-size: 2rem;
+  padding-left: 0.6rem;
+  padding-top: 1.2rem;
+  padding-bottom: 2.2rem;
+
+  color: rgba(255,255,255,1);
+  font-weight: 400;
+
+}
+
+.slidesmenuDiv a {
+  color: rgba(230,230,230,0.99);
+}
+.slidesmenuDiv a:hover {
+  color: rgba(250,250,250,0.99);
+  font-weight: 700;
+}
+
+
+
+.slidelistli {
+  padding-left: 1.2rem;
+  padding-top: 1rem;
+  font-size: 1.1rem;
+  line-height: 1.05rem;
+}
+/* text-decoration: underline; */
+
+
+
+.substep { opacity: 0; }
+.substep.substep-visible { opacity: 1; transition: opacity 1s; }
+
+
+@media print {
+  @page {
+    size: landscape;
+  }
+
+  .substep { opacity: 1; }
+
+  .slide {
+    clear: both;
+    page-break-after: always;
+  }
+
+  .menul {
+    display: none;
+  }
+
+  .ytDiv {
+    display: none;
+  }
+
+  .infoDiv {
+    display: none;
+  }
+
+  .slidesmenuDiv {
+    display: none;
+  }
+
+  i {
+    opacity: 0;
+  }
+
+  html, body {
+    width: 297mm;
+    height: 210mm;
+    -webkit-print-color-adjust: exact !important;
+  }
+
+  .header {
+    width: 100%;
+    padding: 0.1em;
+    height: 1.5em;
+    background-color: rgba(255,255,0,0.5);
+    display: block;
+    position: fixed;
+    top: 0;
+  }
+  .footer {
+    display: block;
+    background-color: rgba(255,255,0,0.5);
+    width: 100%;
+
+    font-size: 0.6em;
+    position: fixed;
+    bottom: 0;
+  }
+}
+
+mark {
+  background-color: rgba(255,255,0,0.4);
+}
+
+/* .player {
+
+} */
+
+/* .playeraudio {
+--plyr-color-main: #C8102E;
+margin: 0px auto;
+max-width: 80%;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+} */
+
+.frac {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  letter-spacing: 0.001em;
+  text-align: left;
+  line-height: 1rem;
+  padding: 0.01em;
+  height:1.7rem;
+  font-size: 70%
+}
+.frac > span {
+  display: block;
+  padding: 0.01em;
+}
+.frac span.bottom {
+
+}
+.frac span.symbol {
+  display: none;
+}

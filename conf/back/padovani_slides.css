@@ -1,0 +1,422 @@
+/* #body {
+  left:0;
+  top:0;
+  width: var(--screen-x);
+  height: var(--screen-y);
+} */
+
+
+
+@media only screen and (orientation:portrait){
+  #body {
+    /* position: fixed; */
+    height: 100vw;
+    /* width: 130%; */
+
+    /* width: 100vh; */
+    /* left: 0; */
+    /* bottom:0;
+    left:0; */
+
+    /* overflow-x: hidden; */
+    transform-origin: 50% 50%;
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    /* left:0; */
+
+    /* width: 100vh; */
+  }
+
+  .menul{
+    position: relative;
+    height: 100vw;
+    width: 100vh;
+
+  }
+
+
+
+  #logodiv {
+    background: rgba(255,0,0,0.3);
+    position: fixed;
+    right: 0px; top: 1vw; width: 10%; height: 8%; z-index: 100;
+  }
+}
+
+@media only screen and (orientation:landscape){
+  #impressdiv {
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+
+  .panel {
+    display: block
+  }
+
+
+  .menul {
+    display: block;/*
+    position: relative;*/
+    pointer-events: auto;
+
+    /* width: 100vw; */
+    /* height: 100vh; */
+  }
+
+  #logodiv {
+    pointer-events: auto; position: absolute; top: 4vh; right: 4vw; width: 10%; height: 8%; z-index: 100;
+  }
+
+}
+
+
+
+.flex-container {
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+/* Font definitions moved to padovani_fonts.css */
+
+a {
+
+
+}
+
+
+.menul {
+/* display: block;
+position: relative;*/
+pointer-events: auto;
+position: fixed;
+top: 0;
+height: auto !important; /* Fix vertical centering issue */
+z-index: 3010;
+/* background-color: rgba(0,200,0,0.3); REMOVED GREEN BACKGROUND */
+
+}
+
+.slide {
+min-height: 90vh;
+min-width: 90vw;
+/* height: 100vh;
+width: 100vw; */
+/* min-height: 600px; */
+/* Set up proportionate scaling */
+/* width: 90%;
+height: 90%; */
+/* height: auto; */
+/* Set up positioning */
+
+
+margin: 0;
+padding: 0;
+top: 5vh;
+/* left: 5vw;
+bottom:5vh;
+right:5vw; */
+/* padding: 2vw; */
+}
+
+.impress-progressbar {
+display: none !important; /* HIDDEN RED SQUARE */
+position: absolute;
+right: 318px;
+bottom: 3px;
+left: 118px;
+border-radius: 7px;
+border: 0px solid rgba(100, 100, 100, 0.2);
+}
+.impress-progressbar DIV {
+width: 0;
+height: 3px;
+border-radius: 5px;
+background: rgba(225, 125, 25, 0.8);
+transition: width 1s linear;
+}
+.impress-progress {
+display: none !important;
+position: absolute;
+left: 50px;
+bottom: 3px;
+text-align: left;
+opacity: 0.3;
+}
+
+.impress-enabled .step { opacity: 0.7; }
+.impress-enabled .step.active { opacity: 1; }
+
+.substep { opacity: 1; }
+.substep.substep-visible { opacity: 1; transition: opacity 1s; }
+
+
+
+.hint {
+/*
+We hide the hint until presentation is started and from browsers not supporting
+impress.js, as they will have a linear scrollable view ...
+*/
+display: none;
+
+/*
+... and give it some fixed position and nice styles.
+*/
+position: fixed;
+left: 0;
+right: 0;
+top: 20%;
+bottom: 20%;
+width: 100%;
+/* bottom: 20vh; */
+
+background: rgba(0,0,0,0.15);
+color: #222;
+text-align: center;
+
+font-size:8vh;
+/* padding: 12vh; */
+
+z-index: 100;
+
+/*
+By default we don't want the hint to be visible, so we make it transparent ...
+*/
+opacity: 0;
+
+/*
+... and position it below the bottom of the screen (relative to it's fixed position)
+*/
+-webkit-transform: translateY(4%);
+-moz-transform:    translateY(4%);
+-ms-transform:     translateY(4%);
+-o-transform:      translateY(4%);
+transform:         translateY(4%);
+
+/*
+Now let's imagine that the hint is visible and we want to fade it out and move out
+of the screen.
+
+So we define the transition on the opacity property with 1s duration and another
+transition on transform property delayed by 1s so it will happen after the fade out
+on opacity finished.
+
+This way user will not see the hint moving down.
+*/
+-webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+-moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+-ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+-o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+transition:         opacity 1s,         transform 0.5s 1s;
+}
+
+
+
+
+.infoDiv {
+/*
+We hide the hint until presentation is started and from browsers not supporting
+impress.js, as they will have a linear scrollable view ...
+*/
+
+/*
+... and give it some fixed position and nice styles.
+*/
+position: absolute;
+left: 15vw;
+right: 15vw;
+top: 15vh;
+bottom: 15vh;
+width: 70vw;
+height: 70vh;
+
+/* bottom: 20vh; */
+
+background: rgba(255,255,250,0.95);
+color: #eee;
+
+
+font-size:1vh;
+/* padding: 12vh; */
+
+z-index: 200;
+box-shadow: 0vw 0vw 2vw #aaa;
+display: flex;
+align-items: center;
+text-align: center;
+
+text-align: center;
+justify-content: center;
+align-items: center;
+
+
+
+/*
+By default we don't want the hint to be visible, so we make it transparent ...
+*/
+/* opacity: 0; */
+
+/*
+... and position it below the bottom of the screen (relative to it's fixed position)
+*/
+/* -webkit-transform: translateY(4%);
+-moz-transform:    translateY(4%);
+-ms-transform:     translateY(4%);
+-o-transform:      translateY(4%);
+transform:         translateY(4%); */
+/*
+
+-webkit-transition: opacity 1s, -webkit-transform 0.5s 1s;
+-moz-transition:    opacity 1s,    -moz-transform 0.5s 1s;
+-ms-transition:     opacity 1s,     -ms-transform 0.5s 1s;
+-o-transition:      opacity 1s,      -o-transform 0.5s 1s;
+transition:         opacity 1s,         transform 0.5s 1s; */
+}
+
+/*
+Now we 'enable' the hint when presentation is initialized ...
+*/
+.impress-enabled .hint { display: block }
+
+/*
+... and we will show it when the first step (with id 'bored') is active.
+*/
+.impress-on-first .hint {
+/*
+We remove the transparency and position the hint in its default fixed
+position.
+*/
+opacity: 1;
+
+-webkit-transform: translateY(0px);
+-moz-transform:    translateY(0px);
+-ms-transform:     translateY(0px);
+-o-transform:      translateY(0px);
+transform:         translateY(0px);
+
+/*
+Now for fade in transition we have the oposite situation from the one
+above.
+
+First after 4.5s delay we animate the transform property to move the hint
+into its correct position and after that we fade it in with opacity
+transition.
+*/
+-webkit-transition: opacity 1s 5s, -webkit-transform 0.5s 4.5s;
+-moz-transition:    opacity 1s 5s,    -moz-transform 0.5s 4.5s;
+-ms-transition:     opacity 1s 5s,     -ms-transform 0.5s 4.5s;
+-o-transition:      opacity 1s 5s,      -o-transform 0.5s 4.5s;
+transition:         opacity 1s 5s,         transform 0.5s 4.5s;
+}
+
+p {
+font-size: 2vmin;
+}
+
+
+
+
+/* .menu-link {
+display: inline-block;
+position: fixed;
+pointer-events: auto;
+top:3vmin;
+left:3vmin;
+font-size: 5vmin;
+z-index: 1210;
+} */
+
+
+.bar1, .bar2, .bar3 {
+z-index: 1210;
+width: 2vw;
+height: 0.6vh;
+background-color: #999;
+opacity: 0.5;
+margin: 0.6vmin 0;
+transition: 0.1s;
+}
+
+/* .change .bar1 {
+background-color: #eeeeee;
+
+-webkit-transition-property: background-color;
+transition-property: background-color;
+}
+
+.change .bar2 {
+background-color: #eeeeee;
+
+}
+
+.change .bar3 {
+background-color: #eeeeee;
+
+-webkit-transition-property: background-color;
+transition-property: background-color;
+} */
+
+
+
+i {
+/* -webkit-filter: invert(0.5); */
+/* filter: invert(0.5); */
+opacity: 0.5;
+font-size: 2.5vmax;
+}
+
+i:hover {
+opacity: 1.0;
+}
+
+.panel {
+pointer-events: auto;
+z-index: 110;
+position: absolute;
+top:30vh;
+background: rgba(30, 30, 30, 1);
+opacity: 0.9;
+left: -18vmax; /*left or right and the width of your navigation panel*/
+width: 8vmax; /*should match the above value*/
+box-shadow: -0.4vw 0vw 0.1vw #aaa;
+}
+
+/* .wrap {
+position: relative;
+} */
+
+
+@media print {
+.slide {
+  clear: both;
+  page-break-after: always;
+}
+
+.menul {
+  display: none;
+}
+
+i {
+  opacity: 0;
+}
+}
+
+#logodiv {
+  opacity: 0.3;
+  transition: opacity 0.3s ease;
+}
+
+#logodiv:hover {
+  opacity: 1;
+}
+
+.hide-logo {
+  opacity: 0 !important;
+  pointer-events: none !important;
+}

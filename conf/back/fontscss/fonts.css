@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'AdamCG';
+    src: url("fonts/ADAM.CG PRO.otf") format("opentype");
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Chunk';
+    src: url("fonts/Chunk.otf") format("opentype");
+    font-style: normal;
+}

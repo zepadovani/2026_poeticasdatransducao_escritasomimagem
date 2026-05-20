@@ -1,0 +1,128 @@
+<!doctype html>
+<html>
+<head>
+	<title>Color animation jQuery plugin</title>
+	<link title="Main" rel="stylesheet" type="text/css" href="../home.css">
+	<link href="demo.css" rel="stylesheet">
+</head>
+<body>
+<h1>Color animation jQuery-plugin</h1>
+
+<div id="body">
+
+	<p class="crumbtrail"><a href="/">Bitstorm.org</a> &gt; <a href="../">jQuery plugins</a> &gt; Color animation</p>
+
+	<h2>Animating colors</h2>
+
+	<p>With jQuery's animate function, you can animate all kinds of css-properties.
+		What's really missing from jQuery is animating colors. This plugin will add this feature.
+		With this plugin, you can animate the following properties:</p>
+
+	<ul>
+		<li>color</li>
+		<li>backgroundColor</li>
+		<li>borderColor</li>
+		<li>borderBottomColor</li>
+		<li>borderLeftColor</li>
+		<li>borderRightColor</li>
+		<li>borderTopColor</li>
+		<li>outlineColor</li>
+	</ul>
+
+	<p>This plugin is based on <a href="http://plugins.jquery.com/color/">Color Animations</a> by John Resig.
+		It fixes a major bug and also adds support for the borderColor-property.</p>
+
+	<p>This plugin also adds rgba-colors, so now you can animate the transparency of the background
+		and foreground text independently. Beware that Internet Explorer 8 and earlier don't support rgba-colors.</p>
+
+	<h2>Demo</h2>
+
+	<div class="demo">
+		<div id="demodiv">DEMO</div>
+
+		<table>
+			<tr>
+				<td><code>$('#demodiv').animate({color: '#E4D8B8'})</code></td>
+				<td>
+					<button onclick="$('#demodiv').animate({color: '#E4D8B8'})">run</button>
+				</td>
+				<td>
+					<button onclick="$('#demodiv').animate({color: '#2A2F4C'})">revert</button>
+				</td>
+			</tr>
+			<tr>
+				<td><code>$('#demodiv').animate({backgroundColor: '#400101'})</code></td>
+				<td>
+					<button onclick="$('#demodiv').animate({backgroundColor: '#400101'})">run</button>
+				</td>
+				<td>
+					<button onclick="$('#demodiv').animate({backgroundColor: '#D9A05E'})">revert</button>
+				</td>
+			</tr>
+			<tr>
+				<td><code>$('#demodiv').animate({borderBottomColor: '#00346B'})</code></td>
+				<td>
+					<button onclick="$('#demodiv').animate({borderBottomColor: '#00346B'})">run</button>
+				</td>
+				<td>
+					<button onclick="$('#demodiv').animate({borderBottomColor: '#DB5533'})">revert</button>
+				</td>
+			</tr>
+			<tr>
+				<td><code>$('#demodiv').animate({borderColor: 'darkolivegreen'})</code></td>
+				<td>
+					<button onclick="$('#demodiv').animate({borderColor: 'darkolivegreen'})">run</button>
+				</td>
+				<td>
+					<button onclick="$('#demodiv').animate({borderColor: '#DB5533'})">revert</button>
+				</td>
+			</tr>
+			<tr>
+				<td><code>$('#demodiv').animate({color: 'rgba(42, 47, 76, 0.1)'})</code></td>
+				<td>
+					<button onclick="$('#demodiv').animate({color: 'rgba(42, 47, 76, 0.1)'})">run</button>
+				</td>
+				<td>
+					<button onclick="$('#demodiv').animate({color: 'rgba(42, 47, 76, 1)'})">revert</button>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<p>The demo is quite simple. Of course you can use all niceties of the animate-function like queues, duration, easing
+		and callback.</p>
+
+	<h2>Download</h2>
+
+    <p>For jQuery 1.8 and later:</p>
+
+	<ul>
+		<li><a href="jquery.animate-colors.js">jquery.animate-colors.js</a> (5kB)</li>
+		<li><a href="jquery.animate-colors-min.js">jquery.animate-colors-min.js</a> (2.7kB, minified)</li>
+	</ul>
+
+    <p>Just upload this file to your server in include it in your HTML below jQuery.</p>
+
+    <h2>Archived</h2>
+
+    <p>For jQuery 1.7.2 and earlier:</p>
+
+   	<ul>
+   		<li><a href="archive/jquery.animate-colors-min.js">jquery.animate-colors-min.js</a> (1.70kB, minified)</li>
+   	</ul>
+
+	<h2>License</h2>
+
+	<p>This jQuery-plugin is available under the <a href="../license.html">MIT and GPL License</a>.</p>
+
+</div>
+
+<address><a href="/">Edwin Martin</a> &lt;<a href="mailto:edwin@bitstorm.org">edwin@bitstorm.org</a>&gt;</address>
+
+<script src="../jquery-1.9.1.min.js"></script>
+<script src="jquery.animate-colors-min.js"></script>
+
+<script>var _gaq=[['_setAccount','UA-93616-1'],['_trackPageview']];(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];g.src='//www.google-analytics.com/ga.js';s.parentNode.insertBefore(g,s)}(document,'script'))</script>
+
+</body>
+</html>

@@ -1,0 +1,1 @@
+java -jar /Users/edwinm/Documents/Develop/Tools/ClosureCompiler/compiler.jar -js jquery.animate-colors.js --compilation_level ADVANCED_OPTIMIZATIONS --warning_level QUIET --externs ../jquery-1.4.2.min.js > jquery.animate-colors-min.js

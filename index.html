@@ -1,0 +1,1447 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+<!-- <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, minimal-ui"> -->
+<link rel='shortcut icon' type='image/x-icon' href="/conf/favicon.ico" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="mobile-web-app-capable" content="yes">
+<title>
+  poéticas da transdução — escuta, ecologia sonora e tecnodiversidade
+</title>
+<meta name="autor" content="José Henrique Padovani " />
+<meta name="author" content="José Henrique Padovani " />
+<meta name="viewport" content="width=1280" />
+<meta name="description" content="Plataforma/template para ensino em modalidade remota, apoio didátio e/ou Ensino à Distância." />
+<meta http-equiv=“Pragma” content=”no-cache”>
+<meta http-equiv=“Expires” content=”-1″>
+<meta http-equiv=“CACHE-CONTROL” content=”NO-CACHE”>
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+<!-- <link href="/conf/mdi/font/css/materialdesignicons.min.css" rel="stylesheet" /> -->
+<link href="https://cdn.jsdelivr.net/npm/@mdi/font@7.2.96/css/materialdesignicons.min.css" rel="stylesheet" />
+<!-- <link href="/conf/js/AudioPlayer/css/audioplayer.css" rel="stylesheet"/>
+<link href="/conf/js/video.js/dist/video-js.min.css" rel="stylesheet"> -->
+<!-- <link href="/conf/css/coresTexto.css" rel="stylesheet" /> -->
+<!-- <link href="/conf/css/padovani_impress_fonts.css" rel="stylesheet" /> -->
+<!-- <link rel='stylesheet' href='https://unpkg.com/plyr@3/dist/plyr.css'> -->
+
+
+<!-- <script src="/conf/js/vexflow/releases/vexflow-debug.js"></script> -->
+<!-- <link href="/conf/css/padovani_fonts.css" rel="stylesheet" /> -->
+<!-- <link href="/conf/css/layout.css" rel="stylesheet" /> -->
+<link href="/conf/css/main.css" rel="stylesheet" />
+
+<!-- Matomo -->
+<script type="text/javascript">
+var _paq = window._paq = window._paq || [];
+/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+_paq.push(['trackPageView']);
+_paq.push(['enableLinkTracking']);
+(function() {
+  var u="//josehenriquepadovani.com/analytics/";
+  _paq.push(['setTrackerUrl', u+'matomo.php']);
+  _paq.push(['setSiteId', '1']);
+  var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+  g.type='text/javascript'; g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+})();
+</script>
+<!-- End Matomo Code -->
+
+    <style>
+      html {
+        --plyr-color-main: #C8102E;
+      }
+
+      /* ── Placeholders de imagem e áudio ──────────────────────────────── */
+      .ph-img {
+        background: #efefef;
+        border: 2px dashed #ccc;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #bbb;
+        font-size: 1.3rem;
+        font-style: italic;
+        text-align: center;
+        padding: 1vmin;
+      }
+
+      .ph-audio {
+        width: 78%;
+        max-width: 680px;
+        margin: 1.5vmin auto;
+        padding: 1.5vmin 2vmin;
+        background: #f5f5f5;
+        border: 2px dashed #ccc;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        color: #999;
+        font-size: 1.25rem;
+        font-style: italic;
+      }
+
+      /* ── Tag de seção (topo dos slides) ─────────────────────────────── */
+      .sec {
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 0.09em;
+        text-transform: uppercase;
+        color: rgb(200, 16, 46);
+        margin-bottom: 0.6vmin;
+      }
+
+      /* ── Frações matemáticas ─────────────────────────────────────────── */
+      .frac {
+        display: inline-block;
+        position: relative;
+        vertical-align: top;
+        letter-spacing: 0.001em;
+        text-align: left;
+        line-height: 1rem;
+        padding: 0.01em;
+        height: 1.7rem;
+        font-size: 70%;
+      }
+
+      .frac>span {
+        display: block;
+        padding: 0.01em;
+      }
+
+      .frac span.symbol {
+        display: none;
+      }
+
+      /* ── Player de vídeo inline com aspect-ratio fixo ─────────────────── */
+      /* O Plyr envolve o <video> em .plyr — forçamos ele a preencher o box */
+      .video-16-9 {
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        aspect-ratio: 16 / 9;
+        border-radius: 4px;
+        overflow: hidden;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        background: #000;
+      }
+
+      .video-16-9 .plyr,
+      .video-16-9 video {
+        position: absolute !important;
+        inset: 0 !important;
+        width: 100% !important;
+        height: 100% !important;
+      }
+    </style>
+    <link rel="stylesheet" href="/conf/js/pannellum/pannellum.css" />
+  <link rel="stylesheet" crossorigin href="/assets/index-BoANmIBg.css">
+</head>
+
+<body class="impress-not-supported">
+
+  <div class='wrapper'>
+
+<div id="impress" class="impressdiv" data-max-scale="1" data-min-scale="0.95">
+
+
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     01 — CAPA
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="01" data-title="Capa" class="step slide" data-x="0" data-y="0"
+    data-notes="Antes de iniciar, gostaria de agradecer imensamente o convite para participar deste evento, em particular à professora Cecilia Nazaré, minha colega na Escola de Música, e à professora Miriam Vieira, estendendo minha gratidão e admiração a todas e todos pesquisadores do Grupo de Pesquisa Intermídia e deste evento pela oportunidade de aprender e compartilhar ideias com um grupo tão diverso e interessante de artistas, acadêmicos e estudantes de diferentes áreas. // É justamente a partir da temática da 'paisagem', da interseção entre mídias, artes e meios técnicos, e dessa diversidade de perspectivas que este lugar me pareceu especialmente interessante para tentar organizar algumas ideias que vêm me desafiando na minha prática como compositor, pesquisador e professor. // Essas ideias, no entanto, passam, antes de tudo, pela escuta. E é por este sentido que convido vocês a iniciar esta conversa.">
+    <div style="padding-top: 11vmin;">
+
+      <p
+        style="font-size:2.9rem; font-weight:400; text-align:center; line-height:3.4rem; text-shadow:none; font-weight:600;">
+        poéticas da transdução
+      </p>
+
+      <p
+        style="font-size:2.4rem; font-weight:300; padding-top:1rem; text-align:center; text-shadow:none; font-style:italic;">
+        escuta, ecologia sonora e tecnodiversidade
+      </p>
+
+      <div style="float:right; width:39vmax; padding-top:8vmin;">
+        <p style="font-size:2rem; text-align:left; line-height:2rem; color:#202020; text-shadow:none;">
+          José Henrique Padovani
+        </p>
+      </div>
+
+      <!-- <div style="float:right; width:59vmax; padding-top:2vmin;">
+        <p style="font-size:1.3rem; font-weight:300; text-align:left; padding-left:2rem;
+                padding-right:23vmin; line-height:2rem; padding-top:0.7rem;
+                color:#202020; text-shadow:none;">
+          <b>ECrIS</b> — Espaço de Criação e Investigação Sonora<br />
+          <b>LaPIS</b> — Laboratório de Pesquisa com Sistemas Interativos<br />
+          <b>CPMC</b> — Centro de Pesquisa em Música Contemporânea
+        </p>
+      </div> -->
+
+      <div style="float:right; width:79vmax;">
+        <p style="font-size:1.8rem; font-weight:400; text-align:right; padding-left:1rem;
+                padding-right:23vmin; line-height:2rem; color:#202020; text-shadow:none;">
+          PPGMUS / Escola de Música / Universidade Federal de Minas Gerais
+        </p>
+      </div>
+
+      <div style="position:absolute; bottom:10vmin; width:90%; height:8vmin;
+                display:flex; justify-content:space-evenly; align-items:center;">
+        <img src="logos/logo_ecris.svg" alt="ECrIS" style="height:10vmin;" />
+        <img src="logos/logo_ufmg.svg" alt="UFMG" style="height:5vmin;" />
+        <img src="logos/logo_ufsj.png" alt="UFSJ" style="height:8vmin;" />
+        <img src="logos/logo_cnpq.svg" alt="CNPq" style="height:5vmin;" />
+        <img src="logos/logo_fapemig.svg" alt="FAPEMIG" style="height:8vmin;" />
+      </div>
+
+    </div>
+  </div>
+
+  <div id="02" data-title="O Pantanal e a escuta" class="step slide" data-rel-x="2000" data-y="0">
+    <div style="padding:25vmin 8vmin 0;">
+      <div class="slide-audio-player">
+        <audio controls>
+          <source src="audio/bugios_intermidia_48000.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+    </div>
+  </div>
+
+  <div id="03" data-title="Pantanal — vídeo" data-video-bg="video/bom_20231003_060457.mp4" data-video-bg-muted="true"
+    data-notes="
+  O que escutamos agora são alguns trechos de gravações que fiz no Pantanal Sul-Mato-Grossense em 2023. São fruto de um trabalho que começou em 2023, perto de Corumbá, na Base de Estudos da UFMS no Pantanal. O convite veio do violoncelista, professor e pesquisador da UFMS, William Texeira, no contexto do projeto 'Pantanal Sounds'.
+
+  Durante três dias, nossa equipe multidisciplinar — com estudantes, professores e pesquisadores da UFMS, UNESPAR, UFMG e Harvard — acordava por volta das 4 da manhã. Precisávamos chegar aos locais de gravação antes do nascer do sol, que é quando a fauna e todo o território sonoro ficam mais ativos.
+  " class="step slide" data-rel-x="2000" data-y="0">
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     02 — Pantanal Sounds (fotos de fundo — 7 slides)
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="04" data-title="Pantanal — tarde" data-img-bg="pantanal_imgs/20231002_162142.jpg" class="step slide"
+    data-notes="" data-rel-x="2000" data-y="0">
+
+    <div style="position:absolute; bottom:16vmin; left:8vmin;">
+      <!-- <p class="sec" style="color:#fff; opacity:0.9;">I. O Pantanal e a escuta</p> -->
+      <p style="font-size:2rem; font-weight:600; color:#fff; text-shadow:0 1px 8px rgba(0,0,0,0.8);">
+        Projeto Pantanal Sounds
+      </p>
+      <p style="font-size:1.35rem; font-weight:300; color:#ddd; text-shadow:0 1px 5px rgba(0,0,0,0.8);">
+        Corumbá · Base de Estudos da UFMS · outubro 2023
+      </p>
+    </div>
+  </div>
+
+  <div id="05" data-title="Pantanal — pôr do sol" data-img-bg="pantanal_imgs/20231002_170654.jpg" class="step slide"
+    data-notes="Em um desses dias, antes de o barco sair para nos levar a uma enseada no Rio Miranda — onde passaríamos cerca de uma hora e meia completamente imóveis gravando —, eu decidi caminhar perto da base e gravar sons dali. "
+    data-rel-x="2000" data-y="0">
+  </div>
+
+  <div id="06" data-title="Pantanal — madrugada" data-img-bg="pantanal_imgs/20231003_045124.jpg"
+    data-img-overlay="rgba(0,0,0,0.3)" class="step slide" data-rel-x="2000" data-y="0"
+    data-notes="Fui com algum receio, mas confiando no aviso do nosso guia no primeiro dia: a onça que tínhamos escutado na véspera, em uma caminhada de gravação próxima à base, não ofereceria perigo ali por perto.  ">
+  </div>
+
+  <div id="07" data-title="Pantanal — amanhecer" data-img-bg="pantanal_imgs/20231003_051312.jpg" class="step slide"
+    data-notes="Embora seu som fosse certamente impactante e reverberante, o que eu queria muito escutar novamente e registrar sozinho, sem outros ruídos..."
+    data-rel-x="2000" data-y="0">
+  </div>
+
+  <div id="08" data-title="Pantanal — aurora" data-img-bg="pantanal_imgs/20231003_060658.jpg" class="step slide"
+    data-notes="...era o coro expressivo dos bugios, que vocalizam de maneira extremamente dramática, com uma força e uma presença que me impressionaram muito"
+    data-rel-x="2000" data-y="0">
+  </div>
+
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     26 — A escuta mediada / a luneta de papel  [slide 04]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="09" data-title="A escuta mediada" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+  Usando fones de ouvido para monitorar a gravação, sentia essa sensação...  que os sons que eu ouvia pelo dispositivo não eram aqueles ao meu redor sem os fones. A própria qualidade dos microfones, o modo como eu podia modular a potência do som, a maneira como os fones cobrem todo o pavilhão auricular — emudecendo os sons 'acústicos'... // 
+  
+  A própria situação de estar imóvel, controlando a respiração e os ruídos que produzo para não interferir na gravação, direcionando os microfones para captar os sons. // 
+  
+  Tudo isso criava uma situação de escuta bastante particular. É como a criança que brinca com um tubo de papelão, fingindo que é uma luneta, para recortar uma parte do mundo visível... o lugar de escuta é transformado, adaptado e deslocado.
+  ">
+    <div style="padding:5vmin 8vmin 0;">
+
+      <p class="sec">I. O Pantanal e a escuta</p>
+
+      <div style="display:flex; gap:3vmin; align-items:flex-start; margin-top:0.5vmin;">
+
+        <div style="flex:1; overflow:hidden; border-radius:4px;">
+          <img src="pantanal_imgs/20231003_053205.jpg" alt="Gravador e fones de ouvido em campo"
+            style="width:100%; height:90%; object-fit:cover;" />
+        </div>
+
+        <div style="flex:1.5;">
+          <ul style="font-size:2rem; line-height:3rem; padding-left:1.5rem; list-style:disc;">
+            <li><strong>mediação perceptiva</strong></li>
+
+
+            <li style="margin-top:0.8vmin;">Lugar de escuta <strong>transformado, adaptado e deslocado</strong> pela
+              mediação</li>
+
+
+            <li style="margin-top:0.8vmin;">mediação como algo que, ao mesmo tempo, <strong>engendra</strong> um lugar
+              de escuta e que, ao mesmo tempo, <strong>é instaurada</strong> por um gesto técnico e criativo.</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     27 — Simondon e Bateson  [slide 05]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="10" data-title="Simondon e Bateson" class="step slide" data-rel-x="2000" data-y="0" data-notes=" 
+Como ensina Simondon, a ferramenta e o instrumento não apenas são objetos técnicos que *estendem nossa ação e percepção*: elas transformam as pssibilidades do nosso corpo e da nossa mente, alterando-os prosteticamente com novas potencialidades e características. 
+
+Gregory Bateson, ao refletir sobre a relação entre mente, corpo e ambiente, criticando epistemologias egocêntricas que nos hiper-individualizam e nos separam do mundo, usa a **imagem de um cego caminhando com uma bengala**. 
+
+Bateson pergunta: onde termina o 'eu' do sujeito, que percebe e caminha pelo mundo, tateando o solo com sua bengala? Na pele da mão que segura a bengala? Na ponta da bengala que efetivamente 'lê' o chão? Ou, na dúvida, em algum lugar intermediário entre a mão e a ponta da bengala?
+
+Essa pergunta é provocadora, porque desafia muito sinteticamente alguns dualismos que aceitamos tacitamente: mente X corpo, orgânico X técnico, sujeito X mundo. Sua alegoria simples coloca em dúvida, muito praticamente, nossa segurança sobre essas categorias.
+  ">
+    <div style="padding:5vmin 8vmin 0;">
+
+      <div style="flex:1; padding-left:0.5vmin;">
+        <p style="font-size:1.7rem; line-height:2.4rem;  margin-bottom:1vmin;">Simondon: ao estender prosteticamente o
+          corpo, <b>a ferramenta e
+            o instrumento também mudam nossa
+            atuação/transformação no mundo</b>.</p>
+
+
+        <blockquote style="font-size:1.3rem; line-height:2.2rem; font-style:italic;
+                          padding:1.5vmin 2vmin; border-left:4px solid #C8102E;
+                          margin:1.5vmin 0; color:#444;">
+
+          A acoplagem pode assim comportar uma transformação, por exemplo uma adaptação
+          de impedâncias; a mão ou o pé são pouco eficazes para agir sob a água, e menos
+          ainda sobre o ar: a superfície das extremidades dos membros pode ser aumentada
+          por ramos, palmas, um leque ou, mais ou menos ilusoriamente, pela asas de Ícaro
+          ...
+        </blockquote>
+        <p style="font-size:1.2rem;">(SIMONDON, 1958, p. 90, t.n.)</p>
+
+        <br />
+        <p style="font-size:1.7rem; line-height:2.4rem; padding-top:3vmin;">Bateson, alegoria do homem cego que caminha
+          com a ajuda de uma begala:</p>
+
+        <ul style=" font-size:1.4rem; line-height:2.4rem; list-style:disc; padding-left:1.5rem;">
+          <li>Onde termina o "eu" do sujeito que percebe?</li>
+          <li>Na pele da mão? Na ponta da bengala?</li>
+          <li><b></b>Insuficiência evidente de dualidades</b>: corpo/mente, orgânico/técnico, sujeito/mundo.</li>
+        </ul>
+        <!-- <div class="ph-img" style="height:22vmin; margin-top:1.5vmin;">[imagem: Bateson]</div> -->
+      </div>
+
+
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     28 — Lugar-escuta e multinaturalismo  [slide 06]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="11" data-title="Lugar-escuta e multinaturalismo" class="step slide" data-rel-x="2000" data-y="0"
+    data-notes="Com meu gravador e meus fones, eu estava, de certa maneira, tateando esse mundo sonoro do Pantanal. Eu não estava simplesmente escutando ou coletando uma 'paisagem sonora' do Pantanal, porque eu estava imerso, e não simplesmente ocupando um território ou observando de longe um lugar. Mais do que isso, já que tais transduções técnicas e criativas me tomaram por muitos dias depois daquele dia, em horas de trabalho, eu estava, desde aquele momento no Pantanal e mesmo já muito distante de lá, imerso em uma experiência de criar um lugar-escuta: uma das naturezas possíveis que aquele território pode constituir, dependendo de quem é por ele envolvido. 
+
+É, em um contexto poético e imaginativo, o que Viveiros de Castro chama de 'multinaturalismo' — a ideia, presente em cosmologias ameríndias, de que não há uma única natureza compartilhada por todos os seres, mas que diferentes perspectivas e posições no mundo constituem diferentes naturezas. Não há 'o Pantanal' como paisagem ou fundo neutro a ser percebido: há o Pantanal do guia que conseguia ler os sons e os sinais da natureza e nos traduzir, o Pantanal da onça que evita os humanos a não ser em situações extremas, o Pantanal dos bugios que experimentam o território de maneira expressiva e dramática, o Pantanal dos forasteiros que haviam acabado de chegar, muito excitados com toda a experiência que estavam vivendo e pelas possibilidades ainda abertas de pesquisa-criação que começavam a deslumbrar. E havia, naquela madrugada e nas madrugadas após aquela madrugada, trabalhando com os meus áudios em Belo Horizonte e em Berlim, o Pantanal que eu estava constituindo com meu gravador, meus fones, minhas ferramentas computacionais e minha experimentação artística. ">
+    <div style="padding:7vmin 8vmin 5vmin;">
+
+      <p style="font-size:2.2rem; font-weight:600; margin-bottom:1.5vmin;">Lugar-escuta e multinaturalismo</p>
+
+      <p style="font-size:2rem; line-height:2.8rem; margin-bottom:1.5vmin;">
+        <strong>Viveiros de Castro</strong>
+        <br /><br />
+        Não há uma única natureza compartilhada: diferentes perspectivas e posições no mundo <strong>constituem
+          diferentes naturezas</strong>.
+      </p>
+
+      <p style="font-size:2rem; line-height:2.8rem; margin-bottom:2vmin;">
+        Cada ser no habitat Pantanal <strong>constitui, percebe, vive e auta</strong> em uma natureza própria.
+
+        <br /><br />
+        Do ponto de vista dos sons e de sua percepção e produção: cada ser instaura um <b>lugar</b>.
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     30 — Instauração de um lugar-escuta  [slide 07]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="12" data-title="Instauração de um lugar-escuta" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+  
+Eu não estava registrando, criando ou representando um cenário ou paisagem, mas estava constituindo para mim mesmo um território, um lugar-escuta e um lugar-imaginação, já que ao constituir para mim esse território eu tinha bastante claro que não estava somente acoplando minha percepção ao espaço ao redor, mas também minha imaginação criativa, já inquirida: O que fazer com esses sons? Como colocar o violoncelo de William lado a lado com os bugios sem que eles viessem a se tornar coadjuvantes para um protagonista sonoro humano? Como, em poucos minutos, convidar ouvintes para essa situação de escuta? Como lidar com isso tudo usando ferramentas computacionais de processamento e espacialização sonora, que são parte do dispositivo técnico que desenvolvi para construir a minha própria escuta desse lugar a partir de um processo de criação musical? 
+  ">
+    <div style="padding:7vmin 8vmin 5vmin;">
+
+      <p style="font-size:2.2rem; font-weight:600; margin-bottom:1.5vmin;">Instauração de um lugar-escuta</p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:2vmin;">
+        Não registrar, criar ou representar uma paisagem, mas <strong>estabelecer um território</strong>, um
+        <strong>lugar-escuta</strong> e um
+        <strong>lugar-imaginação</strong>.
+      </p>
+
+      <p style="font-size:1.5rem; font-weight:600; margin-bottom:1vmin;">Perguntas que emergiram:</p>
+
+      <ul style="font-size:1.4rem; line-height:2.5rem; list-style:disc; padding-left:2rem;">
+        <li>O que fazer com esses sons?</li>
+        <li>Como colocar o violoncelo ao lado dos bugios sem torná-los coadjuvantes?</li>
+        <li>Como, em poucos minutos, convidar ouvintes para essa escuta?</li>
+        <li>Como usar ferramentas computacionais para construir esse lugar?</li>
+        <li>Como não reproduzir implicitamente a hierarquia humano / coadjuvante?</li>
+      </ul>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     31 — Ecologia sonora como situação  [slide 08]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="13" data-title="Ecologia sonora como situação" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+  Começo com essa imagem porque a ecologia da música e dos sons não foi, para mim, um objeto de pesquisa que escolhi — foi uma situação que, posso dizer, me envolveu, e me fez reavaliar não somente conceitos diversos, como aquele de 'paisagem sonora', como minha própria prática artística. Ela se impôs como desafio prático: como compositor e pesquisador, fui colocado diante da necessidade de pensar a escuta, a criação e a mediação técnica não como temas abstratos, mas como problemas concretos que emergiam de lugares específicos, de dispositivos específicos, de relações específicas com o que me rodeava. E esses problemas me levaram, inevitavelmente, a uma pergunta mais ampla, repetindo-se em diferentes situações desse processo de pesquisa-criação como que me inquirindo: que sentido ético, político e sociocultural tem a escuta e a proposição de escutas, que ao fim, é do que se ocupa alguém que compõe? 
+  ">
+    <div style="padding:7vmin 8vmin 5vmin;">
+
+      <p style="font-size:2.2rem; font-weight:600; margin-bottom:1.5vmin;">Ecologia sonora: não uma escolha</p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:1.5vmin;">
+        A ecologia dos sons não foi um objeto de pesquisa que <strong>escolhi</strong>, foi um tema que me capturou,
+        obrigando-me a reavaliar minha prática de pesquisa e criação artística.
+      </p>
+
+      <ul style="font-size:1.4rem; line-height:2.5rem; list-style:disc; padding-left:2rem; margin-bottom:2vmin;">
+        <li>Escuta, criação e mediação técnica como <strong>problemas concretos</strong></li>
+        <li>Emergentes em: lugares específicos · dispositivos específicos · relações específicas</li>
+      </ul>
+
+
+      <br /><br />
+      <p style="font-size:1.5rem; font-weight:600; margin-bottom:1vmin;">Pergunta que se impôs:</p>
+
+      <br />
+      <blockquote style="font-size:1.4rem; line-height:2.2rem; font-style:italic;
+                          padding:1.5vmin 2vmin; border-left:4px solid #C8102E;
+                          margin:0; color:#444;">
+        Que <b>sentido ético, político e sociocultural tem a escuta e a proposição de escutas,</b> isso que, ao fim, é
+        aquilo do que
+        se ocupa alguém que compõe?
+      </blockquote>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     26 — "nós, passarinho" — Inhotim  [slide 09]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="14" data-title="nós, passarinho — Inhotim" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+  Poucos meses antes de ir para o Pantanal, eu fui convidado para compor e estrear uma peça em Inhotim. 'nós, passarinho' (2023), para flauta e eletrônica em tempo real, tem seu título inspirado, claro, em Mário Quintana. Ecoa, adaptando os versos do poeta, os tempos difíceis que tivemos com a pandemia e com o regime autoritário, mas também a sensação de impotência e pequenez frente ao crime ambiental de Brumadinho. A peça foi composta para a Semana do Meio Ambiente de Inhotim, para ser apresentada ao ar livre pela flautista Cássia Lima, no Largo das Orquídeas, um espaço aberto, rodeado de árvores, orquídeas, arbustos e outras plantas ao lado da Galeria Cildo Meireles, em Inhotim. 
+
+
+  A ideia era ter algo com que Cássia pudesse tocar, ora a partir das estantes, ora caminhando por entre o público (que também poderia se locomover livremente pelo espaço). Tinha à disposição um sistema de multicanal de 8 alto-falantes (que Murillo Corrêa escondeu entre as plantas), microfone sem fio para a flauta, algumas estantes de partitura distribuídas pelo espaço que imaginei como poleiros. Depois, resolvi incluir ainda algumas gaiolas, em que coloquei alto-falantes bluetooth domésticos dentro.
+
+  Me foi dado pouco tempo, naquela época, para compor a peça. Precisávamos de algo que durasse cerca de 20 minutos, que dependesse pouco da leitura de partitura (já que a flautista precisava caminhar). Pessoalmente, queria fazer algo que também lidasse diretamente com a própria contradição ambiental que é Inhotim: um oásis paisagístico e artístico, inserido em meio ao território cada vez mais violentado, de Brumadinho, por minas e barragens e um sistema econômico que, ironicamente, é o mesmo que financia sua existência sem oferecer contrapartidas minimamente significativas à população ao redor.
+  ">
+    <div style="padding:5vmin 8vmin 0;">
+
+      <p class="sec">III. "nós, passarinho" — Inhotim (2023)</p>
+
+      <div style="display:flex; gap:3vmin; align-items:flex-start;">
+
+        <div style="flex:1.2;">
+          <p style="font-size:2rem; font-style:italic; font-weight:400; margin-bottom:0.3vmin;">nós, passarinho</p>
+          <p style="font-size:1.3rem; color:#555; margin-bottom:1.5vmin;">para flauta e eletrônica em tempo real · 2023
+          </p>
+          <ul style="font-size:1.3rem; line-height:2.2rem; list-style:disc; padding-left:1.5rem;">
+            <li>Semana do Meio Ambiente · Inhotim · 2023</li>
+            <li>Cássia Lima (flauta) · Murillo Corrêa (eletrônica)</li>
+            <li>Largo das Orquídeas · Galeria Cildo Meireles</li>
+            <li>Multicanal 8 ch. · microfone sem fio</li>
+            <li>Estantes-poleiro · <strong>gaiolas com alto-falantes bluetooth</strong></li>
+            <li style="margin-top:0.8vmin; color:rgb(200,28,46);">
+              Contradição ambiental de Inhotim:<br>oásis / território violentado de Brumadinho
+            </li>
+          </ul>
+        </div>
+
+        <div style="flex:1; display:flex; flex-direction:column; gap:2vmin;">
+          <figure style="margin:0; flex:1; display:flex; flex-direction:column; gap:0.4vmin;">
+            <div id="pano-bula" style="height:32vmin; overflow:hidden;"></div>
+            <figcaption style="font-size:0.8rem; color:#888; text-align:center;">Figura 1 — Inhotim, Largo das Orquídeas
+              (360°)</figcaption>
+          </figure>
+          <figure style="margin:0; flex:1; display:flex; flex-direction:column; gap:0.4vmin;">
+            <img src="/nospassarinho_imgs/jbl_gaiola-f3537c86.jpg" alt="gaiola com alto-falante bluetooth"
+              style="height:32vmin; width:100%; object-fit:cover; border-radius:4px; display:block;" />
+            <figcaption style="font-size:0.8rem; color:#888; text-align:center;">Figura 2 — gaiola com alto-falante
+              bluetooth</figcaption>
+          </figure>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     27 — Gravações / "The city and the city"  [slide 10]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="15" data-title="Espaços sobrepostos" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+  Fiz gravações em Inhotim e em Belo Horizonte, perto do campus da UFMG, usando um gravador Zoom H3-VR, que permite captar áudio 3D. Minha ideia era, de alguma maneira, jogar com a ideia de espaços sobrepostos, como no romance 'The city and the city', de China Miéville, em que duas cidades ocupam o mesmo território, mas em que os habitantes de cada cidade não podem perceber ou interagir com os habitantes e os espaços da outra cidade. No meu contexto, uma dessas cidades é o território humano, não apenas delineado pelos sons de Belo Horizonte, mas também pelos sons de pessoas e máquinas de Inhotim. O outro território é o dos pássaros, que, embora sejam parte do ambiente de Inhotim e de Belo Horizonte, parece estar sobreposto metros acima daquele que ocupamos, sobreposto de maneira que raramente interagimos com ele.
+  ">
+    <div style="padding:7vmin 8vmin 5vmin;">
+
+      <p style="font-size:2.2rem; font-weight:600; margin-bottom:1.5vmin;">Espaços sobrepostos</p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:1.5vmin;">
+        Gravações em Inhotim e Belo Horizonte usando áudio 3D. A intenção era explorar a <strong>coexistência de
+          territórios</strong> invisíveis uns aos outros.
+      </p>
+
+      <ul style="font-size:1.4rem; line-height:2.5rem; list-style:disc; padding-left:2rem; margin-bottom:2vmin;">
+        <li>Inspiração no romance <em>The city and the city</em> (China Miéville)</li>
+        <li>Duas cidades ocupam o <strong>mesmo espaço</strong>, mas seus habitantes não se percebem nem interagem</li>
+      </ul>
+
+      <br /><br />
+      <p style="font-size:1.5rem; font-weight:600; margin-bottom:1vmin;">Na composição:</p>
+      <br />
+
+      <blockquote style="font-size:1.4rem; line-height:2.2rem; font-style:italic;
+                          padding:1.5vmin 2vmin; border-left:4px solid #C8102E;
+                          margin:0; color:#444;">
+        <b>O território humano:</b> delineado pelos sons da cidade (BH) e de pessoas e máquinas (Inhotim).
+        <br /><br />
+        <b>O território dos pássaros:</b> sobreposto metros acima, presente no mesmo ambiente, mas que ignoramos
+        rotineiramente.
+      </blockquote>
+
+    </div>
+  </div>
+
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     28 — Xenocanto / Cadeia de transdução  [slide 11]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="16" data-title="Xenocanto e cadeia de transdução" class="step slide" data-rel-x="2000" data-y="0"
+    data-notes="
+  Para trabalhar essas ideias, logo precisei também aprender a escutar pássaros. Criei meu próprio mecanismo de escuta para isso. Novamente, precisava de uma bengala para tatear esse território sonoro, e, como é hábito que desenvolvi, fui levado a criar os mecanismos técnicos para conseguir fazer isso.">
+    <div style="padding:5vmin 8vmin 0;">
+
+      <!-- 
+      <div style="display:flex; gap:3vmin; align-items:flex-start; margin-top:0.5vmin;">
+
+        <div style="flex:1;">
+          <p style="font-size:1.6rem; font-weight:600; margin-bottom:1vmin;">xeno-canto + algoritmos</p>
+          <div class="ph-img" style="height:26vmin;">[imagem: transcrição automática de canto de pássaro]</div>
+          <ul style="font-size:1.2rem; line-height:2rem; padding-left:1.5rem; margin-top:1vmin; list-style:disc;">
+            <li>Baixar · analisar · ressintetizar · transcrever</li>
+            <li><em>fogo-apagou</em> e outras espécies de BH/Brumadinho</li>
+            <li>Revoadas virtuais · síntese senoidal nas gaiolas</li>
+            <li>Pássaro artificial / aprisionado no dispositivo técnico</li>
+          </ul>
+        </div> -->
+
+      <div style="flex:1; padding-left:1.5vmin; border-left:2px solid #eee;">
+        <p style="font-size:1.6rem; font-weight:600; margin-bottom:1vmin;">Simondon — cadeia de transdução</p>
+        <p style="font-size:1.3rem; line-height:2.2rem; color:#444;">
+          Acoplagem de dispositivos que permite que os sons
+          sejam transformados em materiais criativos.
+        </p>
+        <p style="font-size:1.2rem; line-height:2rem; margin-top:1.5vmin; color:#666; font-style:italic;">
+          sons captados → análise → resíntese<br>
+          → transcrição → notação experimental → performance
+        </p>
+        <p style="font-size:1.3rem; line-height:2rem; margin-top:2vmin; font-weight:600; color:rgb(200,16,46);">
+          A bengala: construída para aprender
+          a solfejar e tatear o território sonoro dos pássaros.
+        </p>
+      </div>
+
+      <!-- </div> -->
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     29 — Xenocanto / Cadeia de transdução  [slide 28]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="17" data-title="Xenocanto e cadeia de transdução"
+    data-video-bg="public/video/materiais_plots_synths_e_transcricoes-9417e05b.mp4" data-video-bg-muted="true"
+    data-notes="
+  Depois de horas estudando esses materiais, editando áudios, buscando maneiras de integrar os sons de pássaros ao meu processo criativo, cheguei a uma solução criativa que me satisfazia e que dava conta do desafio: uma camada de sons 'ambiental' que deslocava-se entre a tranquilidade de Inhotim e os sons de uma avenida movimentada de Belo Horizonte, revoadas virtuais de pássaros (que me divertiram muito ao confundir senhoras em Inhotim que tentavam filmar pássaros invisíveis), além de uma estrutura que permitia que Cássia ora improvisasse a partir de materiais que escutava (motivos de pássaros como fogo-apagou, por exemplo), ora tivesse uma partitura mais usual a ler (em uma das estantes dispostas no espaço), e ora lesse de maneira mais livre transcrições automáticas que criei de diferentes espécies de pássaros, criando após isso uma camada mais livre de escrita sugerindo mais humanamente a expressividade dessas notações. Para além disso, eu podia espacializar, fragmentar e mudar a altura dos sons da flauta, aproximando-a espectralmente dos sons de pássaros. Além disso, criei sons ressintetizados dos pássaros pela síntese bastante metálica de sons senoidais, o que era tocado pelos alto-falantes dentro das gaiolas: imagem que me interessava muito pela sua potência sugestiva da imagem dessa configuração gaiola-alto-falante: o pássaro aprisionado no dispositivo técnico, a confusão natural que o caráter mecânico de alguns cantos de pássaros cria com sons de alarmes, sirenes e outros sons urbanos, e a imagem do que poderia ser um pássaro 'artificial' - motivo que tem interessado inúmeros artistas e artesões que criam pássaros autômatos.
+  " class="step slide" data-rel-x="2000" data-y="0">
+
+    <style>
+      /* Identifica o vídeo pelo nome do arquivo e aplica o ajuste de proporção.
+         O 'object-fit: contain' garante que ele ocupe o limite máximo sem cortar as bordas. */
+      video[src*="materiais_plots_synths_e_transcricoes"] {
+        object-fit: contain !important;
+        width: 100vw !important;
+        height: 100vh !important;
+      }
+    </style>
+
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     30 — Transformação da escuta  [slide 12]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="18" data-title="Transformação da escuta" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+  O que em todo caso quero recuperar, ao dizer sobre essa experiência intensa de composição, é que esse processo de criar um mecanismo particular e idiossincrático de construir meus próprios meios de escuta, de aprender a lidar com sons que já me cercavam mais aos quais eu fazia 'cara de paisagem', por assim dizer transformou de maneira muito intensa minha escuta, minha relação com os pássaros e com o espaço que me cercava. Como tantas vezes, saindo para ir a pé à UFMG, os sons de pássaros que antes eram apenas parte de uma 'paisagem sonora' passaram a ser uma informação muito presente, muito ativa. Aquilo que antes eu escutava como uma ambiência tranquila, os sons de diversas espécies de pássaros ao redor, tornaram-se não apenas mais audíveis, mas uma informação que chegava a me atordoar justamente porque deixaram de ser 'fundo' e tornaram-se 'figura': a todo momento eu tentava identificar a espécie, identificar as gestualidades e enunciados sonoros, a dramaticidade e mesmo o 'humor' ou afeto que cada canto ou chamado me despertava. Esse processo de individuação sonora, em que algo se destaca de um fundo e torna-se individualizado, ocorreu de maneira intensa e mudou de maneira intensa, especialmente naqueles dias, o que eu escutava. Da sensação de caminhar entre sons em um segundo plano passei à situação de me sentir caminhando entre dezenas de vozes, com informações significantes para mim, e que me cercavam, cada uma com sua própria agência e presença, disputando minha atenção de maneira exigente e até mesmo impositiva. Claro, estava cansado, virando noites compondo com esses materiais, mas havia uma transformação que era da minha própria compreensão sonora. O mais próximo que vivi disso foi a sensação de, ao aprender uma língua estrangeira, em outro país, chegar atordoado ao fim do dia porque as novas informações demandavam toda uma reconfiguração dos nossos processos cognitivos.
+  ">
+    <div style="padding:7vmin 8vmin 5vmin;">
+
+      <p style="font-size:2.2rem; font-weight:600; margin-bottom:1.5vmin;">Transformação da escuta</p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:1.5vmin;">
+        <strong>Individuação sonora:</strong> algo se destaca do fundo e torna-se figura.
+      </p>
+
+      <ul style="font-size:1.4rem; line-height:2.5rem; list-style:disc; padding-left:2rem; margin-bottom:1.5vmin;">
+        <li><strong>Antes:</strong> pássaros como <em>ambiência</em> — fundo tranquilo</li>
+        <li><strong>Depois:</strong> pássaros como <em>informação ativa</em> — dezenas de vozes individuais</li>
+        <li>Espécie · gestualidade · enunciados · dramaticidade · "humor"</li>
+      </ul>
+
+      <p style="font-size:1.4rem; line-height:2.2rem; font-style:italic; color:#444; margin-bottom:2vmin;">
+        Da sensação de caminhar entre sons em segundo plano<br>
+        → caminhar entre vozes que disputam a atenção de maneira exigente e impositiva
+      </p>
+
+      <hr style="border:none; border-top:1px solid #ddd; margin:2vmin 0;">
+
+      <blockquote style="font-size:1.4rem; line-height:2.2rem; font-style:italic;
+                          padding:1.5vmin 2vmin; border-left:4px solid #C8102E;
+                          margin:0; color:#444;">
+        Aprender uma língua estrangeira em outro país:<br>
+        chegar atordoado ao fim do dia — reconfiguração de processos cognitivos.
+      </blockquote>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     31 — De volta ao Pantanal / novas perguntas  [slide 13]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="19" data-title="De volta ao Pantanal — novas perguntas" class="step slide" data-rel-x="2000" data-y="0"
+    data-notes="
+  Gostaria no entanto de voltar ao Pantanal, porque contei apenas como foi o processo inicial, a partir dali, registrando sons com colegas e amigos e pensando no que fazer com aquilo. Por mais de um ano, fiquei com esses materiais guardados, pensando em como compor algo usando partes de tantas horas de áudio e vídeo gravados: como criar uma peça que articulasse as questões que me surgiram a partir da experiência de estar no meio dos sons naquele bioma tão particular, e que também dialogasse com as questões que me surgiram a partir da experiência de compor 'nós, passarinho'. 
+
+Em 'nós, passarinho' a questão era sobre o lugar: como criar uma situação em que o ouvinte não soubesse onde estava, ou que o colocasse em uma situação de dúvida sobre esse lugar. Já o Pantanal me colocou diante de uma pergunta de pesquisa-criação diferente... se, ainda que eu tenha minhas reservas à noção de 'paisagem sonora' de Murray Schafer, me cause simpatia a ideia de que o mundo é uma composição (ainda que prefira levar isso para uma abordagem mais perspectivista e ecológica), o que se colocava para mim é que, na melhor das hipóteses, eu poderia ser co-criador de uma composição com os sons do Pantanal assim como o William, para quem eu tinha prometido uma peça para violoncelo e eletrônica, seria um 'animal' a mais dentre tantos outros. O que se colocava para mim, enfim, é: com quem estou quando escuto? Como, junto com esses outros seres, constituo um lugar-escuta? E como fazer isso de uma maneira que não reproduza implicitamente a hierarquia problemática, cerne dos eventos ecológicos e sociais que enfrentamos em nível global, em que o humano é o protagonista e os outros seres coadjuvantes? 
+  ">
+    <div style="padding:7vmin 8vmin 5vmin;">
+
+      <p style="font-size:2.2rem; font-weight:600; margin-bottom:1.5vmin;">De volta ao Pantanal</p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:1vmin;">
+        De <em>nós, passarinho</em>:<br>
+        → <em>Como criar um lugar em que o ouvinte não saiba onde está?</em>
+      </p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:2vmin;">
+        Do Pantanal — outra pergunta:<br>
+        → <em>Se o mundo é uma composição, posso ser co-criador com os sons do Pantanal?</em><br>
+        → <em>William seria mais um animal dentre tantos outros.</em>
+      </p>
+
+      <p style="font-size:1.5rem; font-weight:600; margin-bottom:1vmin;">O que se colocou:</p>
+
+      <ul style="font-size:1.4rem; line-height:2.5rem; list-style:disc; padding-left:2rem;">
+        <li>Com quem estou quando escuto?</li>
+        <li>Como, junto a esses outros seres, constituo um lugar-escuta?</li>
+        <li>Como não reproduzir a hierarquia problemática
+          em que o humano é protagonista e os outros, coadjuvantes?</li>
+      </ul>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     26 — "toté" e "second nature"  [slide 14]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="20" data-title="toté e second nature" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+  Em 2025, durante meu pós-doutorado na Alemanha, finalmente condensei essas questões em duas peças. A primeira, 'toté', para violoncelo e eletrônica em tempo real, e foi a composição que fiz para o William e que estreamos em abril de 2025 na Université Paris 8, no contexto da Semana Brasil na Paris 8 e do intercâmbio acadêmico com os Professores Makis Solomos e André Villa. A segunda, estreada no fim do ano em Dresden e Berlim, 'second nature', para coro, rói-róis e sistemas interativos, foi criada a partir de um projeto colaborativo desenvolvido com a Profa. Miriam Akkermann, então docente da Freie Universität Berlin, e com o Singakademie Dresden, sob coordenação e direção do maestro Michael Käppler. 
+  ">
+    <div style="padding:5vmin 8vmin 0;">
+
+      <p class="sec">IV. As peças</p>
+
+      <div style="display:flex; gap:3vmin; align-items:flex-start; margin-top:0.5vmin;">
+
+        <div style="flex:1; border-right:2px solid #eee; padding-right:2.5vmin;">
+          <p style="font-size:2rem; font-style:italic; font-weight:400; margin-bottom:0.5vmin;">toté</p>
+          <p style="font-size:1.25rem; color:#666; margin-bottom:1.5vmin;">violoncelo e eletrônica em tempo real · 2025
+          </p>
+          <ul style="font-size:1.3rem; line-height:2.3rem; list-style:disc; padding-left:1.5rem;">
+            <li><strong>Estreia:</strong> abr/2025 · Université Paris 8</li>
+            <li>Semana Brasil na Paris 8</li>
+            <li>William Teixeira (violoncelo, UFMS)</li>
+            <li>Makis Solomos e André Villa (Paris 8)</li>
+            <li>Reapresentada: ANPPOM · Campo Grande, out/2025</li>
+          </ul>
+
+        </div>
+
+        <div style="flex:1;">
+          <p style="font-size:2rem; font-style:italic; font-weight:400; margin-bottom:0.5vmin;">second nature</p>
+          <p style="font-size:1.25rem; color:#666; margin-bottom:1.5vmin;">coro, rói-róis e sistemas interativos · 2025
+          </p>
+          <ul style="font-size:1.3rem; line-height:2.3rem; list-style:disc; padding-left:1.5rem;">
+            <li><strong>Estreia:</strong> dez/2025 · Dresden / Berlim</li>
+            <li>Miriam Akkermann (FU Berlin)</li>
+            <li>Singakademie Dresden</li>
+            <li>Direção: Michael Käppler</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     27 — "toté": decisão composicional  [slide 15]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="21" data-title="toté — decisão composicional" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+'toté' parte, assim, de uma decisão composicional simples, mas que demorou tempo para clarear: William não poderia ser o sujeito humano à frente da paisagem ao fundo. Ele e seu violoncelo precisariam integrar-se lentamente àquele território sonoro como mais um animal entre outros. Do tecido sonoro das gravações, imaginei a escrita para o violoncelo ora como a luneta de papel, à qual aludi antes, recortando frequencias e motivos sonoros que capturaram minha atenção durante a composição, ora como um animal, com comportamentos sonoros, que interagem no ambiente com aqueles de outros animais, ora como um sujeito que se destaca por sua expressividade e dramaticidade, mas sem jamais se colocar à frente de um fundo, mas em convivência em um mesmo habitat.
+  ">
+    <div style="padding:7vmin 8vmin 5vmin;">
+
+      <p style="font-size:2.2rem; font-weight:600; margin-bottom:1.5vmin;"><em>toté</em> — a decisão composicional</p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:1vmin;">
+        William e seu violoncelo <strong>não poderiam ser o sujeito humano
+          à frente de uma paisagem ao fundo</strong>.
+      </p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:2vmin;">
+        Ele precisaria integrar-se lentamente ao território
+        como <strong>mais um animal entre outros</strong>.
+      </p>
+
+      <p style="font-size:1.5rem; font-weight:600; margin-bottom:1vmin;">Escrita para o violoncelo:</p>
+
+      <ul style="font-size:1.4rem; line-height:2.5rem; list-style:disc; padding-left:2rem; margin-bottom:2vmin;">
+        <li> <strong>Luneta</strong> — recorta frequências e motivos do tecido sonoro das gravações</li>
+        <li> <strong>Animal</strong> — comportamentos sonoros que interagem no habitat com outros animais</li>
+        <li> <strong>Sujeito expressivo</strong> — destaca-se pela dramaticidade, mas <em>em convivência</em>,
+          nunca à frente de um fundo</li>
+      </ul>
+
+      <p style="font-size:1.4rem; font-style:italic; color:#444;">Não hierarquia — habitat compartilhado.</p>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     28 — Referências: Caesar e Bauckholt  [slide 16]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="22" data-title="Referências — Caesar e Bauckholt" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+  Isso é fortemente inspirado pelas peças eletroacústicas de Rofolfo Caesar, que cria algoritmos de síntese FM que simulam comportamentos de insetos, e pela peça 'Instinkt', de Carola Bauckholt, à qual gostaria de reservar poucos minutos de escuta [2 minutos]. 
+  ">
+
+
+    <div style="padding:5vmin 8vmin 0;">
+
+
+      <div style="display:flex; gap:3vmin; align-items:flex-start; margin-top:0.5vmin;">
+
+        <div style="flex:1; border-right:2px solid #eee; padding-right:2.5vmin;">
+          <p style="font-size:1.7rem; font-weight:600; margin-bottom:1vmin;">Rodolfo Caesar</p>
+          <ul style="font-size:1.3rem; line-height:2.3rem; list-style:disc; padding-left:1.5rem; margin-top:1vmin;">
+            <li>Algoritmos de síntese FM</li>
+            <li>Simulação de comportamentos de insetos</li>
+            <li>Som como comportamento, não representação</li>
+          </ul>
+        </div>
+
+        <div style="flex:1;">
+          <p style="font-size:1.7rem; font-weight:600; margin-bottom:1vmin;">Carola Bauckholt — <em>Instinkt</em></p>
+
+          <ul style="font-size:1.3rem; line-height:2.3rem; list-style:disc; padding-left:1.5rem; margin-top:1vmin;">
+            <li>Comportamentos sonoros não-humanos</li>
+            <li>Relação entre performer e material</li>
+            <li>Escuta que ultrapassa o "reduzido"</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     29 — Instinkt — escuta  [slide 17]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="23" data-title="Instinkt — Carola Bauckholt" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+  Quando escutei essa peça pela primeira vez, me dei conta de que a noção de 'escuta reduzida' ou mesmo aquela de paisagem sonora não me eram suficientes para elaborar como, enquanto sujeitos, nos relacionamos aos sons desses outros sujeitos, humanos ou não.
+  ">
+    <div style="padding:6vmin 8vmin 0;">
+
+      <p class="sec">IV. Referências</p>
+      <p style="font-size:2rem; font-style:italic; font-weight:400; margin-bottom:0.3vmin;">Instinkt</p>
+      <p style="font-size:1.3rem; color:#666; margin-bottom:2.5vmin;">Carola Bauckholt · [ca. 2 min.]</p>
+
+      <div class="video-16-9">
+        <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="WHm-R0Q_Zcg"></div>
+      </div>
+
+      <blockquote style="font-size:1.6rem; line-height:2.5rem; font-style:italic;
+                        padding:1.8vmin 2.2vmin; border-left:4px solid #C8102E;
+                        margin:2.5vmin 0 0 0; color:#333;">
+        A noção de "escuta reduzida" ou de "paisagem sonora" não me era suficiente
+        para elaborar como, enquanto sujeitos, nos relacionamos
+        aos sons desses outros sujeitos, humanos ou não.
+      </blockquote>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     30 — Nancy: "À l'écoute"  [slide 18]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="24" data-title="Nancy — À l'écoute" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+  Para pensar sobre isso, retorno a uma passagem do ensaio 'À l'écoute' de Jean-Luc Nancy
+
+> 'O sujeito da escuta ou o sujeito que escuta (mas também aquele que está 'sujeito à escuta' no sentido em que se pode estar 'sujeito a' um distúrbio, a uma afecção e a uma crise) não é um sujeito fenomenológico, isto é, não é um sujeito filosófico e, em última análise, talvez não seja sujeito algum, a não ser o lugar da ressonância de sua tensão e de seu reverberar infinitos, a amplitude do desdobramento sonoro e a tenuidade de seu decaimento simultâneo – por meio do qual se modula uma voz na qual vibra, ao refugiar-se nela, o singular de um grito, de um apelo ou de um canto (uma 'voz': é preciso escutar aquilo que soa de uma garganta humana sem ser linguagem, o que sai da goela de um animal ou de um instrumento qualquer que seja, ou mesmo do vento nos galhos: o sussurro ao qual escutamos ou damos o ouvido).'
+  ">
+    <div style="padding:5vmin 8vmin 0;">
+
+      <p class="sec">IV. Referências</p>
+      <p style="font-size:1.6rem; font-weight:600; margin-bottom:2vmin;">Jean-Luc Nancy — <em>À l'écoute</em></p>
+
+      <blockquote style="font-size:1.42rem; line-height:2.35rem; font-style:italic;
+                        padding:2vmin 2.5vmin; border-left:4px solid #C8102E;
+                        margin:0; color:#333;">
+        "O sujeito da escuta ou o sujeito que escuta [...] não é um sujeito fenomenológico,
+        isto é, não é um sujeito filosófico e, em última análise, talvez não seja sujeito algum,
+        a não ser o lugar da ressonância de sua tensão e de seu reverberar infinitos,
+        a amplitude do desdobramento sonoro e a tenuidade de seu decaimento simultâneo —
+        por meio do qual se modula uma voz na qual vibra, ao refugiar-se nela,
+        o singular de um grito, de um apelo ou de um canto
+        (uma 'voz': é preciso escutar aquilo que soa de uma garganta humana sem ser linguagem,
+        o que sai da goela de um animal ou de um instrumento qualquer que seja,
+        ou mesmo do vento nos galhos: o sussurro ao qual escutamos ou damos o ouvido)."
+      </blockquote>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     31 — Cadeia de transdução em "toté"  [implícito entre 30 e 26]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="25" data-title="Cadeia de transdução em toté" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+  Toté demandou, ao seu modo, que eu me apropriasse poeticamente de uma tecnologia particular de escuta: apropriar-me e criar meus mecanismos práticos e poéticos que permitissem estruturar, assim como em 'nós, passarinho', uma 'cadeia de transdução': voltando a metáfora da bengala, cabia-me construir meu artefato e meu modo de engajar-me com os recursos técnicos para criar uma longa cadeia de condução que ligaria no espaço e no tempo os sons captados naquela madrugada em Corumbá ao contexto da sala de apresentação, com violoncelo, microfone e alto-falantes. Agora, usaria esse artefato não mais para aprender a solfejar e transcrever os sons de espécies de pássaros, mas para criar um lugar-escuta que acomodasse, em um mesmo habitat, os sons registrados no pantanal, os sons do violoncelo e a gestualidade do performer.
+  ">
+    <div style="padding:7vmin 8vmin 5vmin;">
+
+      <p style="font-size:2.2rem; font-weight:600; margin-bottom:1.5vmin;">Cadeia de transdução em <em>toté</em></p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:1.5vmin;">
+        Apropriar-me e criar <strong>mecanismos práticos e poéticos</strong>
+        que permitissem estruturar uma <em>cadeia de transdução</em>:
+      </p>
+
+      <blockquote style="font-size:1.4rem; line-height:2.2rem; font-style:italic;
+                          padding:1.5vmin 2vmin; border-left:4px solid #C8102E;
+                          margin:0 0 2vmin 0; color:#444;">
+        Não mais solfejar e transcrever sons de pássaros —<br>
+        mas criar um <strong>lugar-escuta</strong> que acomodasse, em um mesmo habitat,<br>
+        os sons do Pantanal, os sons do violoncelo<br>
+        e a gestualidade do performer.
+      </blockquote>
+
+      <p style="font-size:1.5rem; font-weight:600; margin-bottom:1vmin;">A cadeia:</p>
+
+      <p style="font-size:1.4rem; line-height:2.4rem; color:#444;">
+        sons captados em Corumbá (madrugada, 2023)<br>
+        → ferramentas computacionais de análise e síntese<br>
+        → violoncelo + microfone + alto-falantes<br>
+        → sala de apresentação (Paris, 2025)
+      </p>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     26 — "second nature": com quem escuto?  [slide 20]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="26" data-title="second nature — escalando a pergunta" class="step slide" data-rel-x="2000" data-y="0"
+    data-notes="
+  O próximo passo, muito difícil, foi fazer isso com mais pessoas: sem contar com essa enorme sorte, que tive no trabalho com o William, de já ter uma **relação prévia de amizade** e parceria que foi construída há alguns anos. Assim, se em *toté* a pergunta era **'com quem escuto?'**, *Second Nature* foi uma tentativa de escalar essa pergunta para uma situação coletiva: não apenas eu e William e os animais do Pantanal — mas cantores de um coro que eu mal conhecia, o público (sempre uma incógnita) e sons de animais do Pantanal e, novamente, do xenocanto, registrados por inúmeros colaboradores que fazem esse trabalho generoso de registrar e compartilhar gravações em diversos lugares do mundo, inclusive na região do bioma do Pantanal, que me interessava em particular.
+  ">
+    <div style="padding:7vmin 8vmin 5vmin;">
+
+      <p style="font-size:2.2rem; font-weight:600; margin-bottom:1.5vmin;"><em>second nature</em> — escalando a pergunta
+      </p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:1vmin;">
+        Em <em>toté</em>: <strong>"com quem escuto?"</strong><br>
+        → eu + William + animais do Pantanal
+      </p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:1.5vmin;">
+        Em <em>second nature</em>: a <strong>mesma pergunta em situação coletiva</strong>
+      </p>
+
+      <ul style="font-size:1.4rem; line-height:2.5rem; list-style:disc; padding-left:2rem; margin-bottom:2vmin;">
+        <li>Cantores de um coro que eu mal conhecia</li>
+        <li>Público (sempre uma incógnita)</li>
+        <li>Sons de animais do Pantanal e do xeno-canto</li>
+        <li>Colaboradores anônimos que registram e compartilham gravações pelo mundo</li>
+      </ul>
+
+      <p style="font-size:1.4rem; font-style:italic; color:#444;">
+        Como escalar essa pergunta sem a sorte<br>
+        de uma relação de amizade e parceria já consolidada?
+      </p>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     27 — "second nature": proposta e interação  [slide 21]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="27" data-title="second nature — proposta" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+A proposta, acordada logo no início do projeto com Miriam e Michael, foi de criarmos uma situação de interação baseada em técnicas de escuta de máquina. Para além da antropomorfização, esse *leitmotiv* que já nos cansa a todos na era da IA, as técnicas de escuta de máquina nada mais são do que algoritmos que permitem extrair dados de sons gravados, comparando-os ou identificando padrões. Identificar o ritmo ou a frequência fundamental do canto de um pássaro, ou as consoantes e sons ruidosos de uma fala, separar camadas sonoras em um áudio qualquer, segmentar a fala de uma pessoa por palavras, sílabas, pausas, fonemas, etc. Um jogo bastante divertido que, na literatura, encontra sua expressão mais evidente, talvez, na poesia concreta.
+
+Pensamos diversas vezes em como criar um contexto em que o público interagisse: usar fones de ouvido e streaming de áudio, convidando-os a cantar? Captar sons da plateia? Distribuir instruções? Tudo isso me parecia muito pouco 'natural', se é que posso ainda usar essa palavra aqui. Queria um convite mais lúdico, que fizesse a audiência de humanos alemães para o qual eu preparava a minha peça se comportasse de maneira mais lúdica e orgânica. 
+  ">
+    <div style="padding:5vmin 8vmin 0;">
+
+      <p class="sec">V. "second nature"</p>
+
+      <div style="display:flex; gap:3vmin; align-items:flex-start; margin-top:0.5vmin;">
+
+        <div style="flex:1; border-right:2px solid #eee; padding-right:2.5vmin;">
+          <p style="font-size:1.6rem; font-weight:600; margin-bottom:1vmin;">Técnicas de escuta de máquina</p>
+          <ul style="font-size:1.3rem; line-height:2.3rem; list-style:disc; padding-left:1.5rem;">
+            <li>Identificar ritmo, frequência fundamental, padrões</li>
+            <li>Separar camadas sonoras</li>
+            <li>Segmentar fala: sílabas, pausas, fonemas</li>
+            <li>Não antropomorfização — extração de dados acústicos</li>
+            <li><em>Poesia concreta como referência literária</em></li>
+          </ul>
+        </div>
+
+        <div style="flex:1;">
+          <p style="font-size:1.6rem; font-weight:600; margin-bottom:1vmin;">Como interagir?</p>
+          <ul style="font-size:1.3rem; line-height:2.3rem; list-style:disc; padding-left:1.5rem;">
+            <li>Fones + streaming? · Captar plateia? · Distribuir instruções?</li>
+            <li><em>"Tudo isso me parecia muito pouco natural"</em></li>
+            <li>Queria algo mais <strong>lúdico e orgânico</strong></li>
+            <li>Que fizesse a audiência se comportar de maneira espontânea</li>
+            <li>Sem ruptura no ato natural de escutar sons em um lugar</li>
+          </ul>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     28 — Rói-róis e algoritmos  [slide 22]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="28" data-title="Rói-róis e algoritmos" data-img-bg="nospassarinho_imgs/roiroi.png" class="step slide"
+    class="step slide" data-rel-x="2000" data-y="0" data-notes="
+A solução me veio de sopetão, como quando imaginei as gaiolas em 'nós, passarinho': usar 'rói-róis', esse brinquedo instrumento típico do nordeste brasileiro, também chamado de berra-boi. Um copo de papel preso a um barbante encerado enrolado em um palito. Em seu uso tradicional, roda-se o copo e o instrumento cria um zumbido característico, cuja altura, ruído e dinâmica são modulados pela velocidade de rotação. Usado de outras maneiras, no entanto, é possível modular a voz com ele próximo à boca, criar grãos que em conjunto lembram sapos em um brejo, etc. A 'interação' aqui, não seria apenas dos meus algoritmos diversos para detectar alturas, formantes e disparar áudios semelhantes no espaço, mas o convite de um cantor ou uma cantora que, após tocar o instrumento em meio a plateia, se aproxima de uma pessoa qualquer e lhe dá um brinquedo. Nenhuma instrução, nenhum processo complexo que criasse qualquer ruptura no ato natural de escutar sons em um lugar: apenas o convite a mediar a própria escuta e ação sonora em um habitat comum, com um brinquedo desconhecido mas de fácil utilização.
+
+Enfim, os cantores usam rói-róis desde o início da peça. Depois, começam a distribuí-los ao público. Um sistema de microfones captura os sons produzidos — pelos cantores e pela plateia —, analisa suas características espaciais e espectrais, e busca por sons de animais com similaridades acústicas. Esses sons são projetados na mesma direção de onde vieram os sons humanos. A ação individual desperta um animal nesse meio ambiente criado pela peça, e cada som tece o panorama desse habitat que mistura os sons produzidos por meios acústicos na sala e aqueles produzidos pelos alto-falantes: um habitat, ao mesmo tempo natural e artificial, musical e ruidoso, humano e não-humano.
+  ">
+    <div style="padding:5vmin 8vmin 0;">
+
+
+      <!-- <figure style="margin:0; flex:1; display:flex; flex-direction:column; gap:0.4vmin;">
+        <img src="nospassarinho_imgs/roiroi.png" alt="rói-rói"
+          style="height:100%; width:100%; object-fit:cover; border-radius:4px; display:block;" />
+        <figcaption style="font-size:0.8rem; color:#888; text-align:center;">rói-rói</figcaption>
+      </figure> -->
+
+      <!-- <p class="sec">V. "second nature"</p>
+
+      <div style="display:flex; gap:3vmin; align-items:flex-start; margin-top:0.5vmin;">
+
+        <div style="flex:1;">
+          <p style="font-size:1.6rem; font-weight:600; margin-bottom:1vmin;">Rói-roi / berra-boi</p>
+
+
+
+
+          <ul style="font-size:1.2rem; line-height:2rem; list-style:disc; padding-left:1.5rem; margin-top:1vmin;">
+            <li>Instrumento típico do nordeste brasileiro</li>
+            <li>Copo de papel + barbante encerado + palito</li>
+            <li>Modula altura, ruído e dinâmica por velocidade de rotação</li>
+            <li>Usado próximo à boca, cria grãos que lembram sapos em brejo</li>
+          </ul>
+        </div>
+
+        <div style="flex:1.2;">
+          <p style="font-size:1.6rem; font-weight:600; margin-bottom:1vmin;">O sistema</p>
+          <ul style="font-size:1.3rem; line-height:2.3rem; list-style:disc; padding-left:1.5rem;">
+            <li>Cantores usam rói-róis desde o início da peça</li>
+            <li>Distribuem ao público — sem instrução formal</li>
+            <li>Apenas o gesto de um cantor que se aproxima e oferece um brinquedo</li>
+            <li>Microfones captam sons produzidos</li>
+            <li>Sistema analisa características espaciais e espectrais</li>
+            <li>Busca sons de animais com similaridades acústicas</li>
+            <li>Projeta na mesma direção de onde vieram os sons humanos</li>
+          </ul>
+          <p style="font-size:1.35rem; margin-top:1.5vmin; font-weight:600; color:rgb(200,22,46);">
+            Som individual → despertar um animal → habitat comum natural/artificial
+          </p>
+        </div>
+
+      </div> -->
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     29 — Segunda natureza / multinaturalismo  [slide 23]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="29" data-title="Segunda natureza" class="step slide" data-rel-x="2000" data-y="0"
+    data-notes="'Segunda natureza' é um conceito filosófico antigo: os hábitos e práticas culturais que, com o tempo, se tornam uma segunda natureza para os humanos. Mais recentemente, no entanto, esse tema também pode assumir o caráter de um delírio transumanista, como os novos Napoleões do Vale do Silício que deliram em colonizar Marte. Aqui, no entanto, não se trata de transformar o humano em uma segunda natureza e nem de descartar 'a primeira', mas de reinserir-se no próprio meio, não importa mais se natural ou artificial, mas com a intenção clara de compreendê-lo de dentro, e não como paisagem percebida de longe.">
+    <div style="padding:7vmin 8vmin 5vmin;">
+
+      <p style="font-size:2.2rem; font-weight:600; margin-bottom:1.5vmin;">Segunda natureza</p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:1vmin;">
+        <strong>Conceito filosófico antigo:</strong><br>
+        hábitos e práticas culturais que se tornam uma segunda natureza.
+      </p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:1.5vmin;">
+        <strong>Versão transumanista</strong> (Musk, Vale do Silício):<br>
+        colonizar Marte · descartar "a primeira" natureza
+      </p>
+
+      <hr style="border:none; border-top:1px solid #ddd; margin:2vmin 0;">
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:1vmin;">
+        <strong>Aqui:</strong><br>
+        Não transformar o humano · não descartar a primeira —
+      </p>
+
+      <p style="font-size:1.5rem; line-height:2.4rem; margin-bottom:1.5vmin;">
+        <strong>Reinserir-se no próprio meio:</strong><br>
+        natural ou artificial, compreendê-lo <strong>de dentro</strong>,<br>
+        não como paisagem percebida de longe.
+      </p>
+
+      <p style="font-size:1.4rem; font-style:italic; color:#444;">
+        Multinaturalismo: não uma natureza compartilhada,<br>
+        mas naturezas constituídas por perspectivas e posições no mundo.
+      </p>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     30 — Tecnodiversidade — Yuk Hui  [slide 24]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="30" data-title="Tecnodiversidade — Yuk Hui" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+  Fecho com essa ideia poderosa de Yuk Hui: tecnodiversidade. Assim como a biodiversidade é condição para a vida, a diversidade de imaginações tecnológicas — enraizadas em diferentes culturas, práticas e modos de habitar o mundo — é condição para um mundo habitável. Contra a 'monotecnologia' globalizante, que tende a achatar diferenças e a homogeneizar práticas e imaginações, a tecnodiversidade é aposta em artefatos e processos situados, que produzem mundos diferentes, que nos integram ao mundo não como consumidores entorpecidos pelos nossos sentidos, mas como criadores ativos da nossa percepção, imaginação e sensibilidade.
+  ">
+    <div style="padding:5vmin 8vmin 0;">
+
+      <p class="sec">VI. Tecnodiversidade e a força do lugar</p>
+      <p style="font-size:1.7rem; font-weight:600; margin-bottom:2vmin;">Yuk Hui — Tecnodiversidade</p>
+
+      <blockquote style="font-size:1.55rem; line-height:2.5rem; font-style:italic;
+                        padding:2vmin 2.5vmin; border-left:4px solid #C8102E;
+                        margin:0 0 2.5vmin 0; color:#333;">
+        Assim como a biodiversidade é condição para a vida,
+        a diversidade de imaginações tecnológicas — enraizadas em diferentes culturas,
+        práticas e modos de habitar o mundo —
+        é condição para um mundo habitável.
+      </blockquote>
+
+      <ul style="font-size:1.4rem; line-height:2.5rem; list-style:disc; padding-left:2rem;">
+        <li>Contra a <strong>monotecnologia globalizante</strong> — que achata diferenças</li>
+        <li><strong>Artefatos situados</strong> — enraizados em culturas e modos de habitar</li>
+        <li>Não consumidores entorpecidos — <strong>criadores ativos</strong> da percepção, imaginação e sensibilidade
+        </li>
+        <li>Poética da transdução como mecanismo de produção de lugares-escuta</li>
+      </ul>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     31 — A força do lugar + Obrigado  [slide 25]
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="31" data-title="A força do lugar" class="step slide" data-rel-x="2000" data-y="0" data-notes="
+  No campo da criação intermídia, campo que reúne essa diversidade de pessoas que estão, me parece essencial pensar justamente no que está entre as mídias, entre os dispositivos, entre os seres e os lugares que constituem seu habitat permanente ou temporário. Para que algo deixe de ser uma paisagem e se torne algo muito mais rico, de fato, um território que não apenas nos dá suporte material, mas que entranha-se profundamente em nossa percepção, imaginação e responsabilidade — é preciso escutar de dentro, é preciso reinventar de maneira diversa e particular os artefatos técnicos e simbólicos que nos ajudam a tatear esse território que tem aquilo que Milton Santos denominava, e que descreve tão bem a cidade em que estamos hoje, como a 'força do lugar'.
+
+Obrigado!
+  ">
+    <div style="padding:5vmin 8vmin 0;">
+
+      <p class="sec">VI. Tecnodiversidade e a força do lugar</p>
+      <p style="font-size:1.7rem; font-weight:600; margin-bottom:1.8vmin;">Milton Santos — "A força do lugar"</p>
+
+      <blockquote style="font-size:1.45rem; line-height:2.35rem; font-style:italic;
+                        padding:1.8vmin 2.2vmin; border-left:4px solid #C8102E;
+                        margin:0 0 2vmin 0; color:#333;">
+        Para que algo deixe de ser uma paisagem e se torne algo muito mais rico —
+        um território que não apenas nos dá suporte material,
+        mas que se entranhe profundamente em nossa percepção, imaginação e responsabilidade —
+        é preciso escutar de dentro, é preciso reinventar de maneira diversa e particular
+        os artefatos técnicos e simbólicos que nos ajudam a tatear esse território
+        que tem aquilo que Milton Santos denominava a <strong>"força do lugar"</strong>.
+      </blockquote>
+
+      <ul style="font-size:1.35rem; line-height:2.3rem; list-style:disc; padding-left:2rem;">
+        <li>Campo intermídia: o que está <strong>entre</strong> mídias, dispositivos, seres e lugares</li>
+        <li>Escutar de dentro · reinventar artefatos técnicos e simbólicos</li>
+        <li>Poéticas da transdução como instauração de lugares-escuta</li>
+      </ul>
+
+      <p style="font-size:3rem; text-align:center; padding-top:3vmin; font-weight:300;">
+        Obrigado!
+      </p>
+
+    </div>
+  </div>
+
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     32 — toté (2025) — player
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="32" data-title="toté — première recording" class="step slide" data-rel-x="2000" data-y="0">
+    <div style="padding:6vmin 8vmin 0;">
+
+      <div class="video-16-9">
+        <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="w9xonhCb20A"></div>
+      </div>
+
+      <div style="margin-top:2vmin; text-align:center; line-height:1.8;">
+        <p style="font-size:1.4rem; font-style:italic; font-weight:600; color:#222; margin:0;">
+          toté <span style="font-style:normal; font-weight:400;">(2025)</span>
+        </p>
+        <p style="font-size:1.1rem; color:#555; margin:0.3vmin 0 0;">
+          para violoncelo e eletrônica ao vivo
+        </p>
+        <p style="font-size:1rem; color:#777; margin:0.4vmin 0 0;">
+          Violoncelo: William Teixeira &nbsp;·&nbsp; Composição/eletrônica: José Henrique Padovani
+        </p>
+        <p style="font-size:0.95rem; color:#999; font-style:italic; margin:0.3vmin 0 0;">
+          Amphithéâtre X · Université Paris 8 &nbsp;·&nbsp; Semaine Brasil Paris 8 Periferias · 2 de abril de 2025 &nbsp;[live / non-mixed audio]
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+
+    <!-- ════════════════════════════════════════════════════════════════════
+     32 — toté (2025) — player
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="33" data-title="toté — première recording" class="step slide" data-rel-x="2000" data-y="0">
+    <div style="padding:6vmin 8vmin 0;">
+
+      <div class="video-16-9">
+        <div class="js-player" data-plyr-provider="youtube" data-plyr-embed-id="MqoDvLNK13E"></div>
+      </div>
+
+      <div style="margin-top:2vmin; text-align:center; line-height:1.8;">
+        <p style="font-size:1.4rem; font-style:italic; font-weight:600; color:#222; margin:0;">
+          "second nature" <span style="font-style:normal; font-weight:400;">(2025)</span>
+        </p>
+        <p style="font-size:1.1rem; color:#555; margin:0.3vmin 0 0;">
+          para coro, rói-róis e live-electronice
+        </p>
+        <p style="font-size:1rem; color:#777; margin:0.4vmin 0 0;">
+          Singakademie Dresden &nbsp;·&nbsp; dir. Michael Käppler &nbsp;·&nbsp; José Henrique Padovani
+        </p>
+        <p style="font-size:0.95rem; color:#999; font-style:italic; margin:0.3vmin 0 0;">
+          Production: Miriam Akkermann &nbsp;[live / non-mixed audio]
+        </p>
+        <p style="font-size:0.95rem; color:#999; margin:0.3vmin 0 0;">
+          Freie Universität Berlin · Institut für Philosophie · Berlim &nbsp;·&nbsp; 7 de dezembro de 2025
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ════════════════════════════════════════════════════════════════════
+     34 — Referências
+     ════════════════════════════════════════════════════════════════════ -->
+  <div id="34" data-title="Referências" class="step slide" data-rel-x="2000" data-y="0">
+    <div style="padding: 2.5vmin 6vmin 1vmin;">
+
+      <p style="font-size:1.7rem; font-weight:600; margin-bottom:0.2vmin;">Referências</p>
+      <hr style="border:none; border-top:2px solid #C8102E; margin-bottom:0.8vmin;">
+
+      <div class="autofit" data-max-size="1.0" data-min-size="0.55"
+           style="font-size:0.72rem; line-height:1.2; overflow-wrap:break-word; word-break:break-word; overflow:hidden;">
+<div>BATESON, Gregory. <b>Steps to an ecology of mind</b>. Chicago, Ill.: Univ. of Chicago Press, 2008.</div>
+<div style="margin-top:0;">CAESAR, Rodolfo. A escuta, entre o robô e o animal. <b>Revista Portfolio EAV</b>, [S. l.], v. 1, n. 1, 2013. Disponível em: <a href="https://archive.org/details/caesar-r-2013-a-escuta-entre-o-robo-e-o-animal">https://archive.org/details/caesar-r-2013-a-escuta-entre-o-robo-e-o-animal</a>. Acesso em: 2 jan. 2026.</div>
+<div style="margin-top:0;">CASTRO, Eduardo Batalha Viveiros De. <b>Metafísicas canibais: elementos para uma antropologia pós-estrutural</b>. São Paulo, SP: Cosac Naify : N-1 Edições, 2015.</div>
+<div style="margin-top:0;">CASTRO, Eduardo Viveiros De. Perspectivism and multinaturalism in indigenous America. Em: SURRALLÉS, Alexandre (org.). <b>The land within: indigenous territory and the perception of environment</b>. Copenhagen: IWGIA, 2006. p. 36–74.</div>
+<div style="margin-top:0;">FELD, Steven. acoustemology. Em: NOVAK, David; SAKAKEENY, Matt (org.). <b>Keywords in sound</b>. Durham ; London: Duke University Press, 2015.</div>
+<div style="margin-top:0;">FONTERRADA, Marisa Trench de Oliveira. <b>Música e meio ambiente: ecologia sonora</b>. São Paulo, SP: Irmãos Vitalle Editores Ltda, 2004.</div>
+<div style="margin-top:0;">HUI, Yuk. <b>Tecnodiversidade</b>. São Paulo: Ubu Editora, 2020.</div>
+<div style="margin-top:0;">HUI, Yuk. <b>Art and cosmotechnics</b>. Minneapolis, MN: e-flux Distributed by the University of Minnesota Press, 2021.</div>
+<div style="margin-top:0;">INGOLD, Timothy. Against soundscape. Em: <b>Autumn leaves: sound and the environment in artistic practice</b>. [s.l.]: Double Entendre, 2007. p. 10–13. Disponível em: <a href="https://abdn.elsevierpure.com/en/publications/against-soundscape/">https://abdn.elsevierpure.com/en/publications/against-soundscape/</a>. Acesso em: 9 fev. 2026.</div>
+<div style="margin-top:0;">MIÉVILLE, China. <b>The City &amp; The City</b>. New York: Del Rey, 2009.</div>
+<div style="margin-top:0;">NANCY, Jean-Luc. <b>À l'écoute</b>. Paris: Galilée, 2002.</div>
+<div style="margin-top:0;">OBERSCHMIDT, Jürgen. <b>Geräuschtöne Über die Musik von Carola Bauckholt</b>. Regensburg: ConBrio, 2014.</div>
+<div style="margin-top:0;">PADOVANI, José. An ecology of invention: for relational, situated, and diverse practices in sound creation and research. Em: ANAIS DO XXXV CONGRESSO DA ANPPOM 2025, Campo Grande. <b>Anais</b> [...]. Em: XXXV CONGRESSO DA ANPPOM. Campo Grande: UFMS, 2025. p. 1–14.</div>
+<div style="margin-top:0;">ROMAGNA, Afonso Felipe. Criação Musical e Inteligência Artificial: Apropriações Tecno-Poéticas e suas Epistemologias Práticas. [S. l.], 2026.</div>
+<div style="margin-top:0;">SANTOS, Milton; MARQUES, Maria Cristina. <b>A natureza do espaço: técnica e tempo, razão e emoção</b>. 4. edição ed. São Paulo, SP: EDUSP, 2002.</div>
+<div style="margin-top:0;">SCHAFER, R. Murray. <b>The tuning of the world</b>. 1st ed. New York: A. A. Knopf, 1977.</div>
+<div style="margin-top:0;">SCHAFER, R. Murray. <b>The soundscape: our sonic environment and the tuning of the world</b>. Rochester, Vt.: Destiny Books, 1994. Disponível em: <a href="http://archive.org/details/soundscapeourson0000scha">http://archive.org/details/soundscapeourson0000scha</a>. Acesso em: 5 abr. 2025.</div>
+<div style="margin-top:0;">SIMONDON, Gilbert. <b>Du mode d'existence des objets techniques</b>. Paris: Aubier, 1989.</div>
+<div style="margin-top:0;">SIMONDON, Gilbert. <b>L'invention dans les techniques: cours et conférences</b>. Paris: Seuil, 2005.</div>
+<div style="margin-top:0;">SOLOMOS, Makis. <b>Exploring the ecologies of music and sound: environmental, mental and social ecologies in music, sound art and artivisms</b>. London ; New York: Routledge, Taylor &amp; Francis Group, 2023. DOI: <a href="https://doi.org/10.4324/9781003254454">10.4324/9781003254454</a>.</div>
+<div style="margin-top:0;">STERNE, Jonathan. Soundscape, Landscape, Escape. Em: BIJSTERVELD, Karin (org.). <b>Soundscapes of the Urban Past</b>. [s.l.]: transcript Verlag, 2013. p. 181–194. DOI: <a href="https://doi.org/10.1515/transcript.9783839421796.181">10.1515/transcript.9783839421796.181</a>. Disponível em: <a href="https://www.degruyter.com/document/doi/10.1515/transcript.9783839421796.181/html">https://www.degruyter.com/document/doi/10.1515/transcript.9783839421796.181/html</a>. Acesso em: 9 fev. 2026.</div>
+      </div>
+
+    </div>
+  </div>
+
+
+    <div id="overview" class="step" data-x="24000" data-y="2000" data-scale="18">
+  </div>
+
+
+  </div></div>
+
+
+</div><!-- end of wrapper -->
+<script src="/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/node_modules/video.js/dist/video.min.js"></script>
+<script src="/conf/js/jquery-color-animation/jquery.animate-colors-min.js"></script>
+<!-- <script src="/conf/js/AudioPlayer/js/audioplayer.js"></script> -->
+<script src="/conf/js/impress.js/js/impress.js"></script>
+<script src="/conf/js/impress.js/extras/markdown/markdown.js"></script>
+<script src="/conf/js/impress.js/src/plugins/rel/rel.js"></script>
+<script src="/conf/js/impress.js/src/plugins/substep/substep.js"></script>
+<script src="/conf/js/impress.js/src/plugins/progress/progress.js"></script>
+
+<script src="/conf/myjs/main.js"></script>
+<script>
+  window.initLayout({
+    ytAddress: "",
+    menuType: "default",
+    menuItems: ["home",{"icon":"mdi-alpha-e","href":"https://ecris.cc/","target":"_blank"},"slidelist","fullscreen","menu"],
+    showLogo: false
+  });
+</script>
+<!-- <script src='https://cdn.polyfill.io/v2/polyfill.min.js?features=es6,Array.prototype.includes,CustomEvent,Object.entries,Object.values,URL'></script> -->
+<script src="/node_modules/plyr/dist/plyr.js"></script>
+<script id="rendered-js">
+// Change "{}" to your options:
+// https://github.com/sampotts/plyr/#options
+//const player = new Plyr('#player', {});
+const players = Array.from(document.querySelectorAll('.js-player')).map(p => new Plyr(p));
+
+// Expose players so it can be used from the console
+window.players = players;
+//# sourceURL=pen.js
+</script>
+
+<script>
+( function( document, window ) {
+  "use strict";
+
+  // Touch handler to detect swiping up and down based on window size.
+  // If the difference in Y change is bigger than 1/20 of the screen height,
+  // we simply call an appropriate API function to complete the transition.
+  var startY = 0;
+  var lastY = 0;
+  var lastDY = 0;
+  var threshold = window.innerHeight / 20;
+
+  document.addEventListener( "touchstart", function( event ) {
+    lastY = startY = event.touches[ 0 ].clientY;
+  } );
+
+  document.addEventListener( "touchmove", function( event ) {
+    var y = event.touches[ 0 ].clientY;
+    var diff = y - startY;
+
+    // To be used in touchend
+    lastDY = lastY - y;
+    lastY = y;
+
+    window.impress().swipe( diff / window.innerHeight );
+  } );
+
+  document.addEventListener( "touchend", function() {
+    var totalDiff = lastY - startY;
+    if ( Math.abs( totalDiff ) > window.innerHeight / 5 && ( totalDiff * lastDY ) <= 0 ) {
+      if ( totalDiff > window.innerHeight / 5 && lastDY <= 0 ) {
+        window.impress().prev();
+      } else if ( totalDiff < -window.innerHeight / 5 && lastDY >= 0 ) {
+        window.impress().next();
+      }
+    } else if ( Math.abs( lastDY ) > threshold ) {
+      if ( lastDY < -threshold ) {
+        window.impress().prev();
+      } else if ( lastDY > threshold ) {
+        window.impress().next();
+      }
+    } else {
+
+      // No movement - move (back) to the current slide
+      window.impress().goto( document.querySelector( "#impress .step.active" ) );
+    }
+  } );
+
+  document.addEventListener( "touchcancel", function() {
+
+    // Move (back) to the current slide
+    window.impress().goto( document.querySelector( "#impress .step.active" ) );
+  } );
+
+} )( document, window );
+</script>
+<script>
+
+var ids = $('.step').map(function(){
+  return this.id;
+}).get();
+// console.log(ids);
+
+for (var i = 0; i < ids.length; i++) {
+  var title = document.getElementById(ids[i]).getAttribute('data-title');
+  console.log(title);
+  if (title !== null) {
+    var $li = $("<li class=\"slidelistli\"></li>").appendTo("#slidelist");
+    var $a = $("<a class=\"slidelink\"></a>").attr("href", ("#"+ids[i])).text("["+ids[i]+ "]" + ' ' +
+    title
+  ).appendTo($li);
+};
+};
+
+var $liultimo = $("<li class=\"slidelistli\"></li>").appendTo("#slidelist");
+var $aaultimo = $("<a ></a>").attr("href", "#overview").text("visão geral").appendTo($liultimo);
+
+</script>
+
+<script>
+var pover = false;
+var lastId = null;
+
+$("body").keydown(function(event){
+  if ((event.which == 27)||(event.which == 48)||(event.which == 79)) {
+    if (pover) {
+      impress().goto(lastId);
+      pover = false;
+    }else{
+      impress().goto("overview");
+      pover = true;
+    };
+  }
+});
+</script>
+
+<script>
+//const player = new Plyr('audio', {});
+
+Array.from(document.querySelectorAll('audio')).forEach(audio => {
+  players[audio.id] = new Plyr(audio, { });
+});
+
+// Exclude #slide-bg-video (the fullscreen background video injected by
+// initLayout) so Plyr does not wrap it and break its positioning.
+Array.from(document.querySelectorAll('video:not(#slide-bg-video)')).forEach(video => {
+  players[video.id] = new Plyr(video, { });
+});
+//player.setup("#player2");
+
+// Expose player so it can be used from the console
+//window.player = player;
+</script>
+<script>
+(function() {
+    var mouseTimer = null, cursorVisible = true;
+
+    function disappearCursor() {
+        mouseTimer = null;
+        document.body.style.cursor = "none";
+        cursorVisible = false;
+    }
+
+    document.onmousemove = function() {
+        if (mouseTimer) {
+            window.clearTimeout(mouseTimer);
+        }
+        if (!cursorVisible) {
+            document.body.style.cursor = "default";
+            cursorVisible = true;
+        }
+        mouseTimer = window.setTimeout(disappearCursor, 1000);
+    };
+})();
+</script>
+<script>
+  if ("ontouchstart" in document.documentElement) { 
+      var hintElement = document.querySelector(".hint");
+      if (hintElement) {
+        hintElement.innerHTML = "<p>Tap on the left or right to navigate</p>";
+      }
+  }
+  // impress().init(); // Initialized in padovanislides.js
+</script>
+</body>
+
+
+    <script src="/conf/js/pannellum/pannellum.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        pannellum.viewer('pano-bula', {
+          type: 'equirectangular',
+          panorama: '/nospassarinho_imgs/inhotim360.jpg',
+          autoLoad: true,
+          autoRotate: -1,
+          showControls: false,
+          mouseZoom: true
+        });
+      });
+    </script>
+
+
+</html>

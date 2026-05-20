@@ -1,0 +1,92 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "jquery-color-animation",
+        "scope": null,
+        "escapedName": "jquery-color-animation",
+        "name": "jquery-color-animation",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "/Users/padovani/Sites"
+    ]
+  ],
+  "_from": "jquery-color-animation@latest",
+  "_id": "jquery-color-animation@1.5.1",
+  "_inCache": true,
+  "_location": "/jquery-color-animation",
+  "_nodeVersion": "0.12.2",
+  "_npmUser": {
+    "name": "edwinm",
+    "email": "edwin@bitstorm.org"
+  },
+  "_npmVersion": "2.7.5",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "jquery-color-animation",
+    "scope": null,
+    "escapedName": "jquery-color-animation",
+    "name": "jquery-color-animation",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/jquery-color-animation/-/jquery-color-animation-1.5.1.tgz",
+  "_shasum": "6dedda628f120d4e8ebe615c7eb0d885999c8723",
+  "_shrinkwrap": null,
+  "_spec": "jquery-color-animation",
+  "_where": "/Users/padovani/Sites",
+  "author": {
+    "name": "Edwin Martin",
+    "email": "edwin@bitstorm.org"
+  },
+  "bugs": {
+    "url": "https://github.com/edwinm/Color-animation-jQuery-plugin/issues"
+  },
+  "dependencies": {
+    "jquery": ">=1.8"
+  },
+  "description": "Let foreground, background and border colors fade to another color.",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-closure-compiler": "0.0.21",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-zopfli": "~0.3.1"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "6dedda628f120d4e8ebe615c7eb0d885999c8723",
+    "tarball": "https://registry.npmjs.org/jquery-color-animation/-/jquery-color-animation-1.5.1.tgz"
+  },
+  "gitHead": "9dc7ee7ceabe99a98741048279520694e5f76a7b",
+  "homepage": "http://www.bitstorm.org/jquery/color-animation/",
+  "keywords": [
+    "jquery-plugin",
+    "ecosystem:jquery",
+    "animation",
+    "color",
+    "colour",
+    "effect"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "edwinm",
+      "email": "edwin@bitstorm.org"
+    }
+  ],
+  "name": "jquery-color-animation",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edwinm/Color-animation-jQuery-plugin.git"
+  },
+  "scripts": {},
+  "version": "1.5.1"
+}
